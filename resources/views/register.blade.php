@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online shopping for Mobiles and Laptops</title>
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{asset('css/index.css')}}">
+    <link rel="stylesheet" href="{{asset('css/index.js')}}">
+    <style>
+        body {
+            background-image: url("images/background.jpg");
+            background-repeat: repeat-y;
+            background-size: 1500px;
+        }
+        .form-control{
+            height:30px;
+        }
+        .container{
+            margin-top:20px;
+        }
+        .msg{
+            color:red;
+            font-size: 18px;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function regval()
+        {
+            var name_elt = document.getElementById("name");
+            var lname_elt = document.getElementById("lname");
+            var mobile = document.getElementById("mobile");
+            var email = document.getElementById("email");
+            var password = document.getElementById("password");
+            var cpassword = document.getElementById("cpassword");
+            var name_msg = document.getElementById("name_msg");
+            var m_msg = document.getElementById("mobile_msg");
+            var email_msg = document.getElementById("emai_msg");
+            var p_msg = document.getElementById("password_msg");
+            var cp_msg = document.getElementById("cpassword_msg");
+            form_status = true;
+
+            if(name_elt.value == '')
+            {
+                name_msg.style.visibility = 'visible';
+                name_elt.style.borderColor = 'red';
+                form_status = false;
+            }
+            else
+            {
+                name_elt.style.borderColor = 'black';
+                name_msg.style.visibility = 'hidden';
+            }
+            if(lname_elt.value == '')
+            {
+                m_msg.style.visibility = 'visible';
+                lname_elt.style.borderColor = 'red';
+                form_status = false;
+            }
+            else
+            {
+                lname_elt.style.borderColor = 'black';
+                m_msg.style.visibility = 'hidden';
+            }
+            if(mobile.length < 10)
+            {
+                mobile.style.borderColor = 'black';
+            }
+            else
+            {
+                mobile.style.borderColor = 'red';
+                form_status = false;
+            }
+            if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email))
+            {
+                email_msg.style.visibility = 'hidden';
+                email.style.borderColor = 'black';
+            }
+            else
+            {
+                email_msg.style.visibility = 'visible';
+                email.style.borderColor = 'red';
+                form_status = false;
+            }
+            
+            if(password.length < 5)
+            {
+                password.style.borderColor = 'black';
+                p_msg.style.visibility = 'hidden';
+            }
+            else
+            {
+                p_msg.style.visibility = 'visible';
+                password.style.borderColor = 'red';
+                form_status = false;
+            }
+            if(cpassword == '' || cpassword == password)
+            {
+                cp_msg.style.visibility = 'hidden';
+                cpassword.style.borderColor = 'black';
+            }
+            else
+            {
+                cp_msg.style.visibility = 'visible';
+                cpassword.style.borderColor = 'red';
+                form_status = false;
+            }
+            if (form_status == false) 
+            {
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"> 
+        <form action="" >
+            <a class="nav-link" href="index" style="color:red;"><i class="fa fa-home" style="font-size: 2em; position:fixed;"></i></a>
+            <center><h3>REGISTRATION FORM</h3><hr></center><br>
+            <div class="form-row">
+                <div class="col-md-4"></div>
+                <div class="col-md-2 mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="First Name">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <span id="name_msg" class="msg" style="visibility: hidden;" >Enter your name</span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3"></div>
+                <div class="col-md-4 mb-3">
+                    <input type="text" class="form-control" id="mobile" placeholder="Mobile Number">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <span id="mobile_msg" class="msg" style="visibility: hidden;">Minimum 10 digits requirerd</span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3"></div>
+                <div class="col-md-4 mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="col-md-3">
+                    <span id="email_msg" class="msg" style="visibility: hidden;">Enter your email</span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3"></div>
+                <div class="col-md-4 mb-3">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <span id="password_msg" class="msg" style="visibility: hidden;">Must have 5 letters</span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3"></div>
+                <div class="col-md-4 mb-3">
+                    <input type="password" class="form-control" id="cpassword" placeholder="Confirm Password">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <span id="cpassword_msg" class="msg" style="visibility: hidden;">Password does not match</span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3"></div>
+                <div class="col-md-4 mb-3">
+                    <input type="submit" class="btn btn-primary " style="width:100%;" value="Register" onclick="return regval()">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3"></div>
+                <div class="col-md-4 mb-3">
+                    <h6 style="color:white;">already have an account?  <a href="#" style="color:black;" onclick="document.getElementById('id02').style.display='block'"
+                            role="button" aria-haspopup="true" aria-expanded="false">Sign-in</a></h6>
+                </div>
+            </div>
+        </form>
+        <div id="id02" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close1"
+                title="Close Modal">&times;</span>
+            </div>
+
+            <div>
+                <input type="text" class="form-control"  placeholder="Username" name="uname" required>
+
+                <input type="password" class="form-control"  placeholder="Password" name="psw" required>
+
+                <br><br><button type="submit" id="btn5">Login</button>
+                <a href="#" style="float:right;">Forgot password??</a>
+            </div>
+    
+        </form>
+    </div>
+</body>
+
+</html>
