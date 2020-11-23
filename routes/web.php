@@ -37,3 +37,6 @@ Route::get('facebook',function(){
 Route::get('formvalidation',function(){
     return view('formvalidation');
 });
+Route::get('admin',function(){
+    return view('admin');
+});

@@ -32,4 +32,7 @@ class postcontroller extends Controller
     public function fn_formvalidation(){
         return view('formvalidation');
     }
+    public function fn_admin(){
+        return view('admin');
+    }
 }
