@@ -39,14 +39,23 @@
             background-color: white;
             padding: 20px 20px 20px 20px;
         }
-
-.top-fixed {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
+        .nav-l
+        {
+            color: white;
+            font-size: 20px;
+            padding: 30px;
+        }
+        .box
+        {
+            width: 200px;
+            height: 300px;
+            border: 2px solid black;
+        }
+        .box2
+        {
+            border: 2px cadetblue double;
+            text-align: center;
+        }
     </style>
 </head>
 
