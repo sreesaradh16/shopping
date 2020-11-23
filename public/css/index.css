@@ -84,10 +84,7 @@ body{
     border: 2px cadetblue double;
     text-align: center;
 }
-.imglap{
-    max-width: 200px;
-    max-height: 150px;
-}
+
 .imgtv{
     max-width: 282px;
     max-height: 176px;

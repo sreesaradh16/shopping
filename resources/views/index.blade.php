@@ -300,7 +300,7 @@
             <hr>
             <div class="card-group">
                 <div class="card">
-                    <center><a href="#"><img src="{{asset('images/productimage/laptop/glap.jpg')}}" class="imglap"
+                    <center><a href="#"><img src="{{asset('images/productimage/laptop/glap.jpg')}}" style="max-width:200px; max-height:150px;"
                                 alt=""></a></center>
                     <center>
                         <center>
@@ -311,7 +311,7 @@
                         </center>
                 </div>
                 <div class="card">
-                    <center><a href="#"><img src="{{asset('images/productimage/laptop/14/lenovo-ideapad-notebook-original-1.jpeg')}}" class="imglap" alt=""></a></center>
+                    <center><a href="#"><img src="{{asset('images/productimage/laptop/14/lenovo-ideapad-notebook-original-1.jpeg')}}" style="max-width:200px; max-height:150px;" alt=""></a></center>
                     <center>
                         <div class="card-body">
                             <h6 class="card-title">Lenovo</h6>
@@ -320,8 +320,8 @@
                     </center>
                 </div>
                 <div class="card">
-                    <center><a href="#"><img src="{{asset('images/productimage/laptop/71K7P66CGnL._AC_SY355_.jpg')}}"
-                                class="imglap" alt=""></a></center>
+                    <center><a href="#"><img src="{{asset('images/productimage/laptop/71K7P66CGnL._AC_SY355_.jpg')}}" style="max-width:200px; max-height:150px;"
+                                 alt=""></a></center>
                     <center>
                         <div class="card-body">
                             <h6 class="card-title">Hp pavallion</h6>
