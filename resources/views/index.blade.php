@@ -18,6 +18,269 @@
 
 
     <style>
+        
+.nav-menu ul li{
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0 10px 28px;
+    list-style-type: none;
+}
+.nav-menu ul{
+    display: flex;
+}
+.top-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.nav-menu2{
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0 10px 0px;
+    list-style-type: none;
+}
+.social{
+    list-style-type: disc;
+}
+.top{
+    height: 100px;
+}
+
+.imgtv{
+    max-width: 282px;
+    max-height: 176px;
+}
+.imghead{
+    max-height: 200px;
+    max-width: 200px;
+}
+.boxpad{
+    padding: 5px 5px 5px 5px;
+}
+.view{
+    text-decoration: none;
+    text-align: right;
+    padding-right: 30px;
+
+}
+a:hover {
+    text-decoration: none;
+}
+li a{
+    color: white;
+}
+.imgphn1{
+    max-width: 100px;
+    max-height: 200px;
+}
+ /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .button1 {
+    background-color: #4e71ba;
+    color: white;
+    padding: 5px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  .button2{
+    padding-left: 300px;
+}
+  #btn1{
+    background-color: #4e71ba;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 95%;
+  }
+    #btn3{
+    background-color:red;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+  }
+
+  #btn4{
+    background-color: green;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+  }
+  #btn5{
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+  }
+  .btn6{
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+  }
+  .btn7{
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 6px;
+    top: 0;
+    width: 99%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    padding: 0px 20px 30px 20px;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 2px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: -10px;
+    top: -25px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .close1 {
+    position: absolute;
+    right: -10px;
+    top: -35px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close1:hover,
+  .close1 :focus,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  .imgphnbox{
+      max-width: 100px;
+      max-height: 200px;
+  }
+  .imgproduct{
+    max-width: 300px;
+    max-height: 500px;
+  }
+  .boxpad2{
+      padding: 35px 10px 10px 10px;
+  }
+  .checked {
+    color: orange;
+  }
+  .font1{
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: normal;
+  }
+  .del{
+    font-weight: bold;
+  }
+  .lineh{
+    line-height: 60%;
+  }
+
         body
         {
             background-color:rgb(250, 240, 240);
