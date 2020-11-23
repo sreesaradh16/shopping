@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Online shopping for Mobiles and Laptops</title>
-        <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
         <!-- CSS -->
         <link rel="stylesheet" href="C:\Users\DELL\Desktop\Assignment\bootstrap-4.5.2-dist\css\bootstrap.min.css">
 
@@ -14,6 +13,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{asset('css/index.css')}}">
         <link rel="stylesheet" href="{{asset('css/index.js')}}">
+
     <style>
         .heading {
             width: auto;
