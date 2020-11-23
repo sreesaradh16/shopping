@@ -83,8 +83,8 @@ body{
     border: 2px solid black;
 }
 .imgphn{
-    max-width: 100px;
-    max-height: 200px;
+    width: 100px;
+    height: 200px;
 }
 .box2{
     border: 2px cadetblue double;
