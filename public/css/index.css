@@ -42,17 +42,10 @@
 .top{
     height: 100px;
 }
-.nav-bcolor{
-    background-color: lightseagreen;
-}
-
 
 .imgtv{
     max-width: 282px;
     max-height: 176px;
-}
-.card{
-    border: none;
 }
 .imghead{
     max-height: 200px;

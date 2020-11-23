@@ -27,6 +27,13 @@
             color: white;
             font-size: 14px;
         }
+            .nav-bcolor{
+            background-color: lightseagreen;
+        }
+        .card
+        {
+            border: none;
+        }
         .header
         {
             background-color:#4e71ba;
