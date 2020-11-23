@@ -454,40 +454,6 @@
                 </div>
             </div>
         </section><br>
-
-        <!-- mobile list -->
-        <section class="d-none d-sm-block bgcolor">
-            <div class="card-group">
-                <div class="card" style="width: 18rem; border:none;">
-                    <center><a href="#"><img src="{{asset('images/productimage/mobile/2/iphone6.jpeg')}}"
-                                class="card-img-top imgphn" alt="..."></a></center>
-                    <div class="card-body">
-                        <center><a href="#">
-                                <h5 class="card-title">New arrivals</h5>
-                            </a></center>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem; border:none;">
-                    <center><a href="#"><img src="{{asset('images/productimage/mobile/4/lenovo-k6.jpeg')}}"
-                                class="card-img-top imgphn" alt="..."></a></center>
-                    <div class="card-body">
-                        <center><a href="#">
-                                <h5 class="card-title">Featured</h5>
-                            </a></center>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem; border:none;">
-                    <center><a href="#"><img src="{{asset('images/productimage/mobile/1/mi-redmi3.jpeg')}}"
-                                class="card-img-top imgphn" alt="..."></a></center>
-                    <div class="card-body">
-                        <center><a href="">
-                                <h5 class="card-title">Best sellers</h5>
-                            </a></center>
-                    </div>
-                </div>
-            </div>
-        </section><br>
-
         <!-- Tv box -->
         <section>
             <div class="card-group bgcolor">
