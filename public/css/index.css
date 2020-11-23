@@ -6,12 +6,6 @@ body{
     padding: 20px 20px 20px 20px;
 }
 
-.header{
-    background-color:#4e71ba;
-    transition: all 0.5s;
-    z-index: 997;
-    padding: 10px 0;
-}
 .top-fixed {
     position: fixed;
     top: 0;
@@ -42,10 +36,6 @@ body{
 }
 .d-flex {
     display: flex!important;
-}
-.text{
-    color: white;
-    font-size: 14px;
 }
 .nav-menu2{
     position: relative;

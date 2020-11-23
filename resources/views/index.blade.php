@@ -17,9 +17,20 @@
     <link rel="stylesheet" href="{{asset('css/index.js')}}">
 
 
-    <script>
-        
-    </script>
+    <style>
+        .text
+        {
+            color: white;
+            font-size: 14px;
+        }
+        .header
+        {
+            background-color:#4e71ba;
+            transition: all 0.5s;
+            z-index: 997;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 
 <body>
