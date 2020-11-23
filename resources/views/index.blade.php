@@ -13,11 +13,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="{{asset('css/index.css')}}">
+    <link rel="stylesheet" href="{{asset('C:\Users\DELL\Desktop\Laravel\project\public\css\index.css')}}">
     <link rel="stylesheet" href="{{asset('css/index.js')}}">
 
 
     <style>
+        body
+        {
+            background-color:rgb(250, 240, 240);
+        }
         .text
         {
             color: white;
@@ -30,6 +34,19 @@
             z-index: 997;
             padding: 10px 0;
         }
+        .bgcolor
+        {
+            background-color: white;
+            padding: 20px 20px 20px 20px;
+        }
+
+.top-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
     </style>
 </head>
 
