@@ -43,10 +43,6 @@ body{
 .d-flex {
     display: flex!important;
 }
-.footer-top {
-    padding: 60px 0 30px 0;
-    background:#3b5998;
-}
 .text{
     color: white;
     font-size: 14px;

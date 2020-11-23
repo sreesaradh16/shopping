@@ -573,7 +573,7 @@
 
 
         <!-- footer -->
-        <div class="footer-top text">
+        <div class="text" style="background-color:#3b5998; padding: 60px 0 30px 0;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-6 ">
