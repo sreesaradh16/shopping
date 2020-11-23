@@ -76,10 +76,7 @@ body{
     height: 300px;
     border: 2px solid black;
 }
-.imgsize{
-    width: 100px;
-    height: 200px;
-}
+
 .box2{
     border: 2px cadetblue double;
     text-align: center;
