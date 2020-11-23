@@ -178,7 +178,7 @@
                         <div class="row ">
                             <div class=" card col-md-3 col-6 d-flex justify-content-center">
                                 <center><a href="#"><img src="{{asset('images/productimage/mobile/1/mi-redmi3.jpeg')}}"
-                                            class="imgphn" alt=""></a></center>
+                                            class="imgsize" alt=""></a></center>
                                 <center>
                                     <div>
                                         <h5>Redmi note 5 pro</h5>
@@ -188,7 +188,7 @@
                             </div>
                             <div class="card col-md-3 col-6 d-flex justify-content-center">
                                 <center><a href="#"><img src="{{asset('images/productimage/mobile/2/iphone6.jpeg')}}"
-                                            class="imgphn" alt=""></a></center>
+                                            class="imgsize" alt=""></a></center>
                                 <center>
                                     <div>
                                         <h5>iphone 6</h5>
@@ -199,7 +199,7 @@
                             <div class="card col-md-3 col-6 d-flex justify-content-center">
                                 <center><a href="#"><img
                                             src="{{asset('images/productimage/mobile/3/mi-redmi-note-4-1.jpeg')}}"
-                                            class="imgphn" alt=""></a></center>
+                                            class="imgsize" alt=""></a></center>
                                 <center>
                                     <div>
                                         <h5>Mi redmi note4</h5>
@@ -209,7 +209,7 @@
                             </div>
                             <div class="card col-md-3 col-6 d-flex justify-content-center">
                                 <center><a href="#"><img src="{{asset('images/productimage/mobile/4/lenovo-k6.jpeg')}}"
-                                            class="imgphn" alt=""></a></center>
+                                            class="imgsize" alt=""></a></center>
                                 <center>
                                     <div>
                                         <h5>Lenovo K6</h5>
@@ -224,7 +224,7 @@
                             <div class="card col-md-3 col-6 d-flex justify-content-center">
                                 <center> <a href="#"><img
                                             src="{{asset('images/productimage/mobile/5/lenovo-k5-note-pa330010in-1.jpeg')}}"
-                                            class="imgphn" alt=""></a></center>
+                                            class="imgsize" alt=""></a></center>
                                 <center>
                                     <div>
                                         <h5>Lenovo Vibe</h5>
@@ -235,7 +235,7 @@
                             <div class="card col-md-3 col-6 d-flex justify-content-center">
                                 <center><a href="#"><img
                                             src="{{asset('images/productimage/mobile/6/micromax-canvas-mega-4g-1.jpeg')}}"
-                                            class="imgphn" alt=""></a></center>
+                                            class="imgsize" alt=""></a></center>
                                 <center>
                                     <div>
                                         <h5>Micromax canvas 2</h5>
@@ -246,7 +246,7 @@
                             <div class="card col-md-3 col-6 d-flex justify-content-center">
                                 <center><a href="#"><img
                                             src="{{asset('images/productimage/mobile/7/samsung-galaxy-on7-sm-1.jpeg')}}"
-                                            class="imgphn" alt=""></a></center>
+                                            class="imgsize" alt=""></a></center>
                                 <center>
                                     <div>
                                         <h5>Samsung galaxy j6</h5>
@@ -257,7 +257,7 @@
                             <div class="card col-md-3 col-6 d-flex justify-content-center">
                                 <center><a href="#"><img
                                             src="{{asset('images/productimage/mobile/8/oppo-a57-na-original-1.jpeg')}}"
-                                            class="imgphn" alt=""></a></center>
+                                            class="imgsize" alt=""></a></center>
                                 <center>
                                     <div>
                                         <h5>Oppa A57</h5>
