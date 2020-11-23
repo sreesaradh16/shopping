@@ -27,7 +27,7 @@
 
         <!-- nav bar -->
 
-        <header id="header" class="top-fixed">
+        <header  class="top-fixed header">
             <nav class="navbar navbar-expand-lg navbar-dark ">
                 <h3 style="padding-right:130px; color: white;">Shop-Cart</h3>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -311,9 +311,7 @@
                         </center>
                 </div>
                 <div class="card">
-                    <center><a href="#"><img
-                                src="{{asset('images/productimage/laptop/14/lenovo-ideapad-notebook-original-1.jpeg')}}"
-                                class="imglap" alt=""></a></center>
+                    <center><a href="#"><img src="{{asset('images/productimage/laptop/14/lenovo-ideapad-notebook-original-1.jpeg')}}" class="imglap" alt=""></a></center>
                     <center>
                         <div class="card-body">
                             <h6 class="card-title">Lenovo</h6>
