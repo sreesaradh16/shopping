@@ -198,7 +198,7 @@
                             <div class="row">
                                 <div class="col-md-2"></div>
                                 <div class="form-group col-md-4" style="font-size: 13px; margin-top: 5px;">
-                                    <label style="color: white;" for="email">Email</label>
+                                    <label style="color: white;" for="email">Email</label><br>
                                     <input type="email" id="email">
                                     <span id="email_msg" style="color: red; visibility: hidden;">Enter your
                                         email</span>
