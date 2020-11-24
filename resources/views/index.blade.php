@@ -13,7 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="{{asset('css/index.css')}}">
+    <link rel="stylesheet" href="{{asset('public/css/index.css')}}">
     <link rel="stylesheet" href="{{asset('css/index.js')}}">
 
 
@@ -312,9 +312,7 @@ input[type=text], input[type=password] {
         .nav-l
         {
             color: white;
-            font-size: 20px;
-            padding: 30px;
-        }
+            font-size: 20px;       }
         .box
         {
             width: 200px;
@@ -325,6 +323,9 @@ input[type=text], input[type=password] {
         {
             border: 2px cadetblue double;
             text-align: center;
+        }
+        #menu1{
+            background-color: #2CBDBB;
         }
     </style>
 </head>
@@ -395,24 +396,20 @@ input[type=text], input[type=password] {
 
         <!-- menu -->
 
-        <nav class="navbar navbar-expand-lg nav-bcolor">
-            <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-l" href="product">Mobile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-l" href="product">Laptop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-l" href="product">Tv</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-l" href="product">Accesories</a>
-                    </li>
-                </ul>
-            </div>
-        </nav><br>
+            <div class="row" id="menu1">   
+                    <div class="col-md-3 col-6">
+                    <center><a class="nav-l" href="product">Mobile</a></center>
+                    </div>
+                    <div class="col-md-3 col-6">
+                    <center><a class="nav-l" href="product">Laptop</a></center>
+                    </div>
+                    <div class="col-md-3 col-6">
+                    <center><a class="nav-l" href="product">Tv</a></center>
+                    </div>
+                    <div class="col-md-3 col-6">
+                    <center><a class="nav-l" href="product">Accesories</a></center>
+                    </div>
+            </div><br>
 
 
 
@@ -450,19 +447,19 @@ input[type=text], input[type=password] {
 
         <section>
             <div class="row">
-                <div class="col-md-4 boxpad">
+                <div class="col-md-4 col-6 boxpad">
                     <div class="box2 bgcolor">
                     <center><h4>MONEY BACK</h4></center>
                     <center><p>30 DAY MONEY BACK GUARANTEE</p></center>
                     </div>
                 </div>
-                <div class="col-md-4 boxpad">
+                <div class="col-md-4 col-6 boxpad">
                     <div class="box2 bgcolor">
                     <center><h4>SPECIAL SALE</h4></center>
                     <center><P>ALL ITEMS UP TO 20% OFF</P></center>
                     </div>
                 </div>
-                <div class="col-md-4 boxpad">
+                <div class="col-md-4 col-12 boxpad">
                     <div class="box2 bgcolor">
                     <center><h4>FREE SHIPPING</h4></center>
                     <center><p>FREE SHIP-ON ORDER OVER RS:600</p></center>
@@ -857,22 +854,22 @@ input[type=text], input[type=password] {
             </h3>
             <hr>
             <div class="row bgcolor">
-                <div class="col-lg-2 col-md-2 col-4 d-flex align-items-center justify-content-center ">
+                <div class="col-md-2 col-4 d-flex align-items-center justify-content-center ">
                     <a href="#" class="nav-link"><img src="{{asset('images/samsung.jpg')}}"></a>
                 </div>
-                <div class="col-lg-2 col-md-2 col-4 d-flex align-items-center justify-content-center">
+                <div class="col-md-2 col-4 d-flex align-items-center justify-content-center">
                     <a href="#" class="nav-link"><img src="{{asset('images/nokia.jpg')}}"></a>
                 </div>
-                <div class="col-lg-2 col-md-2 col-4 d-flex align-items-center justify-content-center">
+                <div class="col-md-2 col-4 d-flex align-items-center justify-content-center">
                     <a href="#" class="nav-link"><img src="{{asset('images/blackberry.jpg')}}"></a>
                 </div>
-                <div class="col-lg-2 col-md-2 col-4 d-flex align-items-center justify-content-center">
+                <div class="col-md-2 col-4 d-flex align-items-center justify-content-center">
                     <a href="#" class="nav-link"><img src="{{asset('images/panasonic.jpg')}}"></a>
                 </div>
-                <div class="col-lg-2 col-md-2 col-4 d-flex align-items-center justify-content-center">
+                <div class="col-md-2 col-4 d-flex align-items-center justify-content-center">
                     <a href="#" class="nav-link"><img src="{{asset('images/sony.jpg')}}"></a>
                 </div>
-                <div class="col-lg-2 col-md-2 col-4 d-flex align-items-center justify-content-center">
+                <div class="col-md-2 col-4 d-flex align-items-center justify-content-center">
                     <a href="#" class="nav-link"><img src="{{asset('images/lenovo.jpg')}}"></a>
                 </div>
             </div>
@@ -883,7 +880,7 @@ input[type=text], input[type=password] {
         <div class="text" style="background-color:#3b5998; padding: 60px 0 30px 0;">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-6 ">
+                    <div class="col-md-2 col-4">
                         <center>
                             <h6>ABOUT</h6>
                             <ul class="nav-link nav-menu2">
@@ -895,7 +892,7 @@ input[type=text], input[type=password] {
                         </center>
                     </div>
 
-                    <div class="col-lg-2 col-md-2 col-sm-6">
+                    <div class="col-md-2 col-4">
                         <center>
                             <h6>Help</h6>
                             <ul class="nav-link nav-menu2">
@@ -907,7 +904,7 @@ input[type=text], input[type=password] {
                         </center>
                     </div>
 
-                    <div class="col-lg-2 col-md-2 col-sm-6">
+                    <div class="col-md-2 col-4">
                         <center>
                             <h6>POLICY</h6>
                             <ul class="nav-link nav-menu2">
@@ -919,7 +916,7 @@ input[type=text], input[type=password] {
                         </center>
                     </div>
 
-                    <div class="col-lg-2 col-md-2 col-sm-6">
+                    <div class="col-md-2 col-4">
                         <center>
                             <h6>Connect with us</h6>
                             <div class="social">
@@ -932,13 +929,13 @@ input[type=text], input[type=password] {
                         </center>
                     </div>
 
-                    <div class="col-lg-2 col-md-2 col-sm-6">
+                    <div class="col-md-2 col-4">
                         <center>
                             <h6>Mail us</h6>
                         </center>
                     </div>
 
-                    <div class="col-lg-2 col-md-2 col-sm-6">
+                    <div class="col-md-2 col-4">
                         <center>
                             <h6>Registered Office Address:</h6>
                         </center>

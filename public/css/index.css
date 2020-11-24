@@ -1,4 +1,48 @@
-
+body
+{
+    background-color:rgb(250, 240, 240);
+}
+.text
+{
+    color: white;
+    font-size: 14px;
+}
+    .nav-bcolor{
+    background-color: lightseagreen;
+}
+.card
+{
+    border: none;
+}
+.header
+{
+    background-color:#4e71ba;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 10px 0;
+}
+.bgcolor
+{
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+}
+.nav-l
+{
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+}
+.box
+{
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+}
+.box2
+{
+    border: 2px cadetblue double;
+    text-align: center;
+}
 .nav-menu ul li{
     position: relative;
     white-space: nowrap;

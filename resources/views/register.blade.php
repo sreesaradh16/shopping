@@ -16,6 +16,101 @@
     <link rel="stylesheet" href="{{asset('css/index.js')}}">
 
     <style>
+    /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 6px;
+    top: 0;
+    width: 99%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    padding: 0px 20px 30px 20px;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 2px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: -10px;
+    top: -25px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .close1 {
+    position: absolute;
+    right: -10px;
+    top: -35px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close1:hover,
+  .close1 :focus,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
         body {
             background-image: url("images/background.jpg");
             background-repeat: repeat-y;
@@ -129,23 +224,23 @@
             <center><h3>REGISTRATION FORM</h3><hr></center><br>
             <div class="form-row">
                 <div class="col-md-4"></div>
-                <div class="col-md-2 mb-3">
+                <div class="col-md-2 col-6 mb-3">
                     <input type="text" class="form-control" id="name" placeholder="First Name">
                 </div>
-                <div class="col-md-2 mb-3">
+                <div class="col-md-2 col-6 mb-3">
                     <input type="text" class="form-control" id="lname" placeholder="Last Name">
                 </div>
-                <div class="col-md-3 mb-3">
+                <div class="col-md-3 col-6 mb-3">
                     <span id="name_msg" class="msg" style="visibility: hidden;" >Enter your name</span>
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="col-md-4 mb-3"></div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 col-12 mb-3">
                     <input type="text" class="form-control" id="mobile" placeholder="Mobile Number">
                 </div>
-                <div class="col-md-3 mb-3">
+                <div class="col-md-3 col-3">
                     <span id="mobile_msg" class="msg" style="visibility: hidden;">Minimum 10 digits requirerd</span>
                 </div>
             </div>
