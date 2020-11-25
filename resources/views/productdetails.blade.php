@@ -24,9 +24,9 @@
 <body>
     <div class="container-fluid">
 
-               <!-- nav bar -->
+        <!-- nav bar -->
 
-               <header id="header" class="top-fixed">
+        <header  class="top-fixed header">
             <nav class="navbar navbar-expand-lg navbar-dark ">
                 <h3 style="padding-right:130px; color: white;">Shop-Cart</h3>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -50,6 +50,8 @@
                             Login
                         </a>
 
+
+                <!-- modal -->
                         <div id="id01" class="modal">
 
                             <form class="modal-content animate" action="/action_page.php" method="post">
@@ -91,32 +93,10 @@
 
 
 
-        <!-- menu -->
-
-        <nav class="navbar navbar-expand-lg nav-bcolor">
-            <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-l" href="mobile">Mobile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-l" href="#">Laptop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-l" href="#">Tv</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-l" href="#">Accesories</a>
-                    </li>
-                </ul>
-            </div>
-        </nav><br>
-
-
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 col-8">
 				        <div class="col-md-12">
-                            <center>><img src="{{asset('images/productimage/mobile/1/mi-redmi3.jpeg')}}" class="card-img imgproduct" alt="..."></center>
+                            <center><img src="{{asset('images/productimage/mobile/1/mi-redmi3.jpeg')}}" class="card-img imgproduct" alt="..."></center>
                         </div>
 				</div>
 				<div class="col-md-6">

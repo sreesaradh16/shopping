@@ -19,9 +19,9 @@
 <body>
     <div class="container-fluid">
 
-               <!-- nav bar -->
+                      <!-- nav bar -->
 
-               <header id="header" class="top-fixed">
+        <header  class="top-fixed header">
             <nav class="navbar navbar-expand-lg navbar-dark ">
                 <h3 style="padding-right:130px; color: white;">Shop-Cart</h3>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -44,6 +44,8 @@
                             role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fw fa-user"></i>
                             Login
                         </a>
+
+                        <!-- modal -->
 
                         <div id="id01" class="modal">
 
@@ -88,31 +90,27 @@
 
         <!-- menu -->
 
-        <nav class="navbar navbar-expand-lg nav-bcolor">
-            <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-l" href="mobile">Mobile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-l" href="#">Laptop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-l" href="#">Tv</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-l" href="#">Accesories</a>
-                    </li>
-                </ul>
-            </div>
-        </nav><br>
+        <div class="row" id="menu1">   
+                    <div class="col-md-3 col-6">
+                    <center><a class="nav-l" href="product">Mobile</a></center>
+                    </div>
+                    <div class="col-md-3 col-6">
+                    <center><a class="nav-l" href="product">Laptop</a></center>
+                    </div>
+                    <div class="col-md-3 col-6">
+                    <center><a class="nav-l" href="product">Tv</a></center>
+                    </div>
+                    <div class="col-md-3 col-6">
+                    <center><a class="nav-l" href="product">Accesories</a></center>
+                    </div>
+            </div><br>
 
 
 
 
         <div class="row">
             <div class="col-md-2"></div>
-            <div class="col-md-10">
+            <div class="col-md-10 col-12">
                 <div class="card mb-3" style="max-width: 1000px;">
                     <div class="row no-gutters">
                         <div class="col-md-3 boxpad2">

@@ -133,47 +133,39 @@
         {
             var name_elt = document.getElementById("name");
             var lname_elt = document.getElementById("lname");
-            var mobile = document.getElementById("mobile");
+            var mobile = document.getElementById("mobile").value;
             var email = document.getElementById("email");
             var password = document.getElementById("password");
             var cpassword = document.getElementById("cpassword");
             var name_msg = document.getElementById("name_msg");
             var m_msg = document.getElementById("mobile_msg");
-            var email_msg = document.getElementById("emai_msg");
+            var email_msg = document.getElementById("email_msg");
             var p_msg = document.getElementById("password_msg");
             var cp_msg = document.getElementById("cpassword_msg");
             form_status = true;
 
-            if(name_elt.value == '')
+            if(name_elt.value == '' || lname_elt.value == '')
             {
                 name_msg.style.visibility = 'visible';
                 name_elt.style.borderColor = 'red';
-                form_status = false;
-            }
-            else
-            {
-                name_elt.style.borderColor = 'black';
-                name_msg.style.visibility = 'hidden';
-            }
-            if(lname_elt.value == '')
-            {
-                m_msg.style.visibility = 'visible';
                 lname_elt.style.borderColor = 'red';
                 form_status = false;
             }
             else
             {
+                name_elt.style.borderColor = 'black';
                 lname_elt.style.borderColor = 'black';
-                m_msg.style.visibility = 'hidden';
+                name_msg.style.visibility = 'hidden';
             }
             if(mobile.length < 10)
             {
-                mobile.style.borderColor = 'black';
+                m_msg.style.visibility = 'visible';
+                form_status = false;
             }
             else
             {
-                mobile.style.borderColor = 'red';
-                form_status = false;
+                m_msg.style.visibility = 'hidden';
+                
             }
             if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email))
             {
@@ -223,31 +215,31 @@
             <a class="nav-link" href="index" style="color:red;"><i class="fa fa-home" style="font-size: 2em; position:fixed;"></i></a>
             <center><h3>REGISTRATION FORM</h3><hr></center><br>
             <div class="form-row">
-                <div class="col-md-4"></div>
-                <div class="col-md-2 col-6 mb-3">
+                <div class="col-md-4 "></div>
+                <div class="col-md-2 col-6">
                     <input type="text" class="form-control" id="name" placeholder="First Name">
                 </div>
-                <div class="col-md-2 col-6 mb-3">
+                <div class="col-md-2 col-6">
                     <input type="text" class="form-control" id="lname" placeholder="Last Name">
                 </div>
-                <div class="col-md-3 col-6 mb-3">
-                    <span id="name_msg" class="msg" style="visibility: hidden;" >Enter your name</span>
+                <div class="col-md-3 col-12">
+                    <span id="name_msg" class="msg" style="visibility: hidden;" >Enter your full name</span>
                 </div>
             </div>
 
             <div class="form-row">
-                <div class="col-md-4 mb-3"></div>
-                <div class="col-md-4 col-12 mb-3">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 col-12 ">
                     <input type="text" class="form-control" id="mobile" placeholder="Mobile Number">
                 </div>
-                <div class="col-md-3 col-3">
+                <div class="col-md-3 col-12">
                     <span id="mobile_msg" class="msg" style="visibility: hidden;">Minimum 10 digits requirerd</span>
                 </div>
             </div>
 
             <div class="form-row">
-                <div class="col-md-4 mb-3"></div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
                     <input type="email" class="form-control" id="email" placeholder="Email">
                 </div>
                 <div class="col-md-3">
@@ -256,21 +248,21 @@
             </div>
 
             <div class="form-row">
-                <div class="col-md-4 mb-3"></div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
                     <input type="password" class="form-control" id="password" placeholder="Password">
                 </div>
-                <div class="col-md-3 mb-3">
+                <div class="col-md-3">
                     <span id="password_msg" class="msg" style="visibility: hidden;">Must have 5 letters</span>
                 </div>
             </div>
 
             <div class="form-row">
-                <div class="col-md-4 mb-3"></div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
                     <input type="password" class="form-control" id="cpassword" placeholder="Confirm Password">
                 </div>
-                <div class="col-md-3 mb-3">
+                <div class="col-md-3">
                     <span id="cpassword_msg" class="msg" style="visibility: hidden;">Password does not match</span>
                 </div>
             </div>
