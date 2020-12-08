@@ -40,42 +40,10 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="index"><i class="fa fa-fw fa-home"></i>Home</a>
                         </li>
-                        <a class="nav-link" href="#" style="padding-right:20px;" onclick="document.getElementById('id01').style.display='block'"
+                        <a class="nav-link" href="login" style="padding-right:20px;" onclick="document.getElementById('id01').style.display='block'"
                             role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fw fa-user"></i>
                             Login
                         </a>
-
-                        <!-- modal -->
-
-                        <div id="id01" class="modal">
-
-                            <form class="modal-content animate" action="/action_page.php" method="post">
-                                <div class="imgcontainer">
-                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                                        title="Close Modal">&times;</span>
-                                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-                                </div>
-
-                                <div class="container">
-                                    <label for="uname"><b>Username</b></label>
-                                    <input type="text" placeholder="Enter Username" name="uname" required>
-
-                                    <label for="psw"><b>Password</b></label>
-                                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                                    <button type="submit">Login</button>
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                                    </label>
-                                </div>
-
-                                <div class="container" style="background-color:#f1f1f1">
-                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                        class="cancelbtn">Cancel</button>
-                                    <span class="psw">Forgot <a href="#">password?</a></span>
-                                </div>
-                            </form>
-                        </div>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i style="font-size:24px" class="fa">&#xf07a;</i> Cart</a>
                         </li>

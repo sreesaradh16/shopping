@@ -1,6 +1,7 @@
+@extends('admin')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,6 @@
 
         <link rel="stylesheet" href="{{asset('css/index.css')}}">
         <link rel="stylesheet" href="{{asset('css/index.js')}}">
-
         <style>
             body {
                 font-family: 'Open Sans', Arial, sans-serif;
@@ -61,58 +61,9 @@
 
 
         </style>
-
-
 </head>
 <body>
-    <div class="container2">
-        <div id="heading3" class="col-md-12">   
-            <div class="form-row">
-                <div class="col-md-4">
-                    <h4 style="margin-top:18px;">Shopping Portal | Admin</h4>
-                </div>
-                <div class="col-md-6"></div>
-                <div class="col-md-2">
-                    <h5 style="margin-top:18px;">Admin</h5>
-                </div>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-3">
-                <div class="side-bar" >
-                    <ul class="widget-menu ">
-                        <li>
-                            <a href="index">Home</a>
-                        </li><br>
-                        <li>
-                            <a href="ordermanagement">Order Management</a>
-                        </li>
-                        <li>
-                            <a href="manageuser">Manage Users</a>
-                        </li>
-                        <br>
-                        <li>
-                            <a href="insertproduct">Insert product</a>
-                        </li>
-                        <li>
-                            <a href="manageproduct">Manage Product</a>
-                        </li>
-                        <br>
-                        <li>
-                            <a href="changepass">Change Password</a>
-                        </li>
-                        <br>
-                        <li>
-                            <a href="#">Log Out</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>   
-            <div class="col-md-9">
-                @yield('content')
-            </div>
-        </div> 
-    </div>
-
+    
 </body>
 </html>
+@endsection

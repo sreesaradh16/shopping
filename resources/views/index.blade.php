@@ -38,38 +38,14 @@
                             style="color: white;">Search</button>
                     </form>
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index"><i class="fa fa-fw fa-home"></i>Home</a>
-                        </li>
-                        <a class="nav-link" href="#" style="padding-right:20px;" onclick="document.getElementById('id01').style.display='block'"
-                            role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fw fa-user"></i>
-                            Login
-                        </a>
-                    
-
-                    <!-- modal -->
-                        <div id="id01" class="modal">
-
-                            <form class="modal-content animate" action="/action_page.php" method="post">
-                                <div class="imgcontainer">
-                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                                        title="Close Modal">&times;</span>
-                                </div>
-
-                                <div class="container">
-                                    <input type="text" class="form-control" placeholder="Username" name="uname" required>
-
-                                    <input type="password" class="form-control" placeholder="Password" name="psw" required>
-
-                                    <button type="submit" id="btn5" class="btn btn-success">Login</button>
-                                    <a href="">Forgot password??</a>
-                                </div><br>
-                                <center><a href="register"><input type="button" class="btn btn-info" value="register" id="btn1"></a></center>
-                                
-                            </form>
-                        </div>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i style="font-size:24px" class="fa"></i> Cart</a>
+                            <a class="nav-link" href="index" style="font-size:20px"><i class="fa fa-fw fa-home"></i>Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="login" style="padding-right:20px; font-size:20px;"><i class="fa fa-fw fa-user"></i>Login</a>
+                        </li>
+                        <li class="nav-item active">   
+                            <a class="nav-link" href="cart" style="font-size:20px"><i class="fa"></i> Cart</a>
                         </li>
                     </ul>
 

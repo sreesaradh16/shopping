@@ -8,9 +8,6 @@ use Illuminate\Support\Str;
 
 class postcontroller extends Controller
 {
-    public function fn_file(){
-        return view('file');
-    }
     public function fn_index(){
         return view('index');
     }
@@ -23,16 +20,31 @@ class postcontroller extends Controller
     public function fn_checkout(){
         return view('checkout');
     }
-    public function fn_register(){
-        return view('register');
-    }
     public function fn_facebook(){
         return view('facebook');
     }
-    public function fn_formvalidation(){
-        return view('formvalidation');
-    }
     public function fn_admin(){
         return view('admin');
+    }
+    public function fn_login(){
+        return view('login');
+    }
+    public function fn_cart(){
+        return view('cart');
+    }
+    public function fn_manageuser(){
+        return view('manageuser');
+    }
+    public function fn_ordermanagement(){
+        return view('ordermanagement');
+    }
+    public function fn_insertproduct(){
+        return view('insertproduct');
+    }
+    public function fn_manageproduct(){
+        return view('manageproduct');
+    }
+    public function fn_changepass(){
+        return view('changepass');
     }
 }
