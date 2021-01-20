@@ -29,6 +29,9 @@ class postcontroller extends Controller
     public function fn_login(){
         return view('login');
     }
+    public function fn_logout(){
+        return view('logout');
+    }
     public function fn_cart(){
         return view('cart');
     }

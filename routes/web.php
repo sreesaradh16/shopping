@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\mycontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,9 @@ Route::get('admin',function(){
 Route::get('login',function(){
     return view('login');
 });
+Route::get('logout',function(){
+    return view('logout');
+});
 Route::get('cart',function(){
     return view('cart');
 });
@@ -52,3 +56,10 @@ Route::get('manageproduct',function(){
 Route::get('changepass',function(){
     return view('changepass');
 });
+Route::post('index',[mycontroller::class,'insert']);
+Route::get('manageuser',[mycontroller::class,'display']);
+Route::get('delete/{id}',[mycontroller::class,'delete']);
+Route::get('update1/{id}',[mycontroller::class,'show']);
+Route::post('update/{id}',[mycontroller::class,'update']);
+Route::view('login','login');
+Route::post('login1/',[mycontroller::class,'login']);

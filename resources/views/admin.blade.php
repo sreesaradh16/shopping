@@ -65,7 +65,7 @@
 
 </head>
 <body>
-    <div class="container2">
+    <div class="container-fluid">
         <div id="heading3" class="col-md-12">   
             <div class="form-row">
                 <div class="col-md-4">
@@ -108,7 +108,7 @@
                     </ul>
                 </div>
             </div>   
-            <div class="col-md-9">
+            <div class="col-md-9" style="top:20px;">
                 @yield('content')
             </div>
         </div> 

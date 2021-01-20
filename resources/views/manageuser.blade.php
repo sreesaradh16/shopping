@@ -58,15 +58,35 @@
             li{
                 list-style:none;
             }
+            th{
+                padding: 0px 15px 15px 0px;
+            }
 
 
         </style>
 
 </head>
 <body>
-<div class="container2">
-<h2>hai</h2>
-</div>
+    <div class="container-fluid">
+            <table  cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>user name</th>
+                    <th>Mobile number</th>
+                    <th>Action</th>
+                </tr>
+                @foreach($data as $Datas)
+                <tr>
+                    <td>{{$Datas->firstname}}</td>
+                    <td>{{$Datas->lastname}}</td>
+                    <td>{{$Datas->username}}</td>
+                    <td>{{$Datas->contact}}</td>
+                    <td><a onclick="return confirm('are you sure')" href="{{url('delete/'.$Datas->id)}}">delete</a></td>
+                </tr>
+                @endforeach
+            </table>
+    </div>
 </body>
 </html>
 @endsection

@@ -94,6 +94,7 @@
                     <input type="password" class="form-control" id="inputPassword3">
                 </div>
             </div>
+            <input type="submit" id="btnpc" class="btn btn-success" value="Submit">
     </div>
 </body>
 

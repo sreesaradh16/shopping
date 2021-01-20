@@ -130,6 +130,11 @@ input[type=text], input[type=password] {
   cursor: pointer;
   width: 50%;
 }
+.carousel-control-next, .carousel-control-prev {
+  width: 8%;
+}
+
+}
 .btn7{
   background-color: red;
   color: white;
