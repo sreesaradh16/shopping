@@ -20,9 +20,9 @@
             body {
                 font-family: 'Open Sans', Arial, sans-serif;
             }   
-            #heading3{
+            #head5{
                 width:100%;
-                height:70px;
+                height:60px;
                 background-color:white;
             }
             .widget-menu {
@@ -31,6 +31,7 @@
                 -moz-border-radius: 3px;
                 border-radius: 3px;
                 overflow: hidden;
+                position:fixed;
             }
             ul {
                 display: block;
@@ -58,60 +59,69 @@
             li{
                 list-style:none;
             }
-
-
+            .sidenav 
+            {
+                position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+                z-index: 1; /* Stay on top */
+                top: 0; /* Stay at the top */
+                left: 0;
+                overflow-x: hidden;
+            }
         </style>
 
 
 </head>
 <body>
     <div class="container-fluid">
-        <div id="heading3" class="col-md-12">   
-            <div class="form-row">
+        <div class="col-md-12">   
+            <div class="form-row sidenav" id="head5">
                 <div class="col-md-4">
-                    <h4 style="margin-top:18px;">Shopping Portal | Admin</h4>
+                    <h4 style="margin-top:18px; padding:0 10px">Shopping Portal | Admin</h4>
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-8"></div>
+            </div>
+        </div><br><br><br>
+        
+            <div class="form-row">
                 <div class="col-md-2">
-                    <h5 style="margin-top:18px;">Admin</h5>
+                    <div class="side-bar" >
+                        <ul class="widget-menu ">
+                            <li>
+                                <a href="index">Home</a>
+                            </li><br>
+                            <li>
+                                <a href="ordermanagement">Order Management</a>
+                            </li>
+                            <li>
+                                <a href="manageuser">Manage Users</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="insertproduct">Insert product</a>
+                            </li>
+                            <li>
+                                <a href="manageproduct">Manage Product</a>
+                            </li>
+                            <li>
+                                <a href="offer">Offers</a>
+                            </li>
+                            <br>
+                            <br>
+                            <li>
+                                <a href="changepass">Change Password</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="#">Log Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>   
+                <div class="col-md-9" style="top:20px;">
+                    @yield('content')
                 </div>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-3">
-                <div class="side-bar" >
-                    <ul class="widget-menu ">
-                        <li>
-                            <a href="index">Home</a>
-                        </li><br>
-                        <li>
-                            <a href="ordermanagement">Order Management</a>
-                        </li>
-                        <li>
-                            <a href="manageuser">Manage Users</a>
-                        </li>
-                        <br>
-                        <li>
-                            <a href="insertproduct">Insert product</a>
-                        </li>
-                        <li>
-                            <a href="manageproduct">Manage Product</a>
-                        </li>
-                        <br>
-                        <li>
-                            <a href="changepass">Change Password</a>
-                        </li>
-                        <br>
-                        <li>
-                            <a href="#">Log Out</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>   
-            <div class="col-md-9" style="top:20px;">
-                @yield('content')
-            </div>
-        </div> 
+            </div> 
+        
     </div>
 
 </body>

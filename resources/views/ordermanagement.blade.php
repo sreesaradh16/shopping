@@ -1,5 +1,5 @@
 @extends('admin')
-@section('section')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,12 +58,44 @@
             li{
                 list-style:none;
             }
+            th{
+                padding: 0px 15px 15px 0px;
+            }
 
 
         </style>
+
 </head>
 <body>
-    
+    <div class="container-fluid">
+            
+<table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
+                            <tr>
+                                <th>User Name</th>
+                                <th>Category</th>
+                                <th>Product Name</th>
+                                <th>Company Name</th>
+                                <th>Product Price</th>
+                                <th>Delivery Date</th>
+                                <th>Action</th>
+                                <th>Action</th>
+
+                            </tr>
+                            @foreach($data as $Data1)
+                            <tr>
+                                <td><a href="{{url('userdetails'.$Data1->id)}}">{{$Data1->name}}</a></td>
+                                <td>{{$Data1->name}}</td>
+                                <td>{{$Data1->name}}</td>
+                                <td>{{$Data1->email}}</td>
+                                <td>{{$Data1->email}}</td>
+                                <td>nil</td>
+                                <td><a onclick="return confirm('are you sure')" href="{{url('updateproduct/'.$Data1->id)}}">update</a></td>                      
+                                <td><a onclick="return confirm('are you sure')" href="{{url('deleteorder/'.$Data1->id)}}">delete</a></td>
+                            </tr>
+                           
+                            @endforeach
+                        </table>
+    </div>
 </body>
 </html>
 @endsection

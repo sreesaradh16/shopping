@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,335 +6,396 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online shopping for Mobiles and Laptops</title>
-   
+
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- jQuery and JS bundle w/ Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="{{asset('css/index.css')}}">
     <link rel="stylesheet" href="{{asset('css/index.js')}}">
 
 
     <style>
-                .nav-menu ul li{
-  position: relative;
-  white-space: nowrap;
-  padding: 10px 0 10px 28px;
-  list-style-type: none;
-}
-.nav-menu ul{
-  display: flex;
-}
-.top-fixed {
-position: fixed;
-top: 0;
-right: 0;
-left: 0;
-z-index: 1030;
-}
-.ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-.align-items-center {
-  align-items: center!important;
-}
-.d-flex {
-  display: flex!important;
-}
-.nav-menu2{
-  position: relative;
-  white-space: nowrap;
-  padding: 10px 0 10px 0px;
-  list-style-type: none;
-}
-.social{
-  list-style-type: disc;
-}
-.top{
-  height: 100px;
-}
+        .nav-menu ul li {
+            position: relative;
+            white-space: nowrap;
+            padding: 10px 0 10px 28px;
+            list-style-type: none;
+        }
 
-.imgtv{
-  max-width: 282px;
-  max-height: 176px;
-}
-.imghead{
-  max-height: 200px;
-  max-width: 200px;
-}
-.boxpad{
-  padding: 5px 5px 5px 5px;
-}
-.view{
-  text-decoration: none;
-  text-align: right;
-  padding-right: 30px;
+        .nav-menu ul {
+            display: flex;
+        }
 
-}
-a:hover {
-  text-decoration: none;
-}
-li a{
-  color: white;
-}
-.imgphn1{
-  max-width: 100px;
-  max-height: 200px;
-}
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
+        .top-fixed {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
 
-/* Set a style for all buttons */
-.button1 {
-  background-color: #4e71ba;
-  color: white;
-  padding: 5px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-.button2{
-  padding-left: 300px;
-}
-#btn1{
-  background-color: #4e71ba;
-  color: white;
-  border: none;
-  cursor: pointer;
-  width: 95%;
-}
-  #btn3{
-  background-color:red;
-  color: white;
-  padding: 5px 20px;
-  border: none;
-  cursor: pointer;
-  width: 30%;
-}
+        .ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
 
-#btn4{
-  background-color: green;
-  color: white;
-  padding: 5px 20px;
-  border: none;
-  cursor: pointer;
-  width: 30%;
-}
-#btn5{
-  background-color: green;
-  color: white;
-  border: none;
-  cursor: pointer;
-  width: 30%;
-}
-.btn6{
-  background-color: green;
-  color: white;
-  border: none;
-  cursor: pointer;
-  width: 50%;
-}
-.carousel-control-next, .carousel-control-prev {
-  width: 8%;
-}
+        .align-items-center {
+            align-items: center !important;
+        }
 
-}
-.btn7{
-  background-color: red;
-  color: white;
-  border: none;
-  cursor: pointer;
-  width: 50%;
-}
-button:hover {
-  opacity: 0.8;
-}
-/* Extra styles for the cancel button */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
+        .d-flex {
+            display: flex !important;
+        }
 
-/* Center the image and position the close button */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
+        .nav-menu2 {
+            position: relative;
+            white-space: nowrap;
+            padding: 10px 0 10px 0px;
+            list-style-type: none;
+        }
 
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
+        .social {
+            list-style-type: disc;
+        }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 6px;
-  top: 0;
-  width: 99%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-}
+        .top {
+            height: 100px;
+        }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  padding: 0px 20px 30px 20px;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 2px solid #888;
-  width: 30%; /* Could be more or less, depending on screen size */
-}
+        .imgtv {
+            max-width: 282px;
+            max-height: 176px;
+        }
 
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: -10px;
-  top: -25px;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-.close1 {
-  position: absolute;
-  right: -10px;
-  top: -35px;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
+        .imghead {
+            max-height: 200px;
+            max-width: 200px;
+        }
 
-.close:hover,
-.close1:hover,
-.close1 :focus,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
+        .boxpad {
+            padding: 5px 5px 5px 5px;
+        }
 
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
+        .view {
+            text-decoration: none;
+            text-align: right;
+            padding-right: 30px;
 
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
+        }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-.imgphnbox{
-    max-width: 100px;
-    max-height: 200px;
-}
-.imgproduct{
-  max-width: 300px;
-  max-height: 500px;
-}
-.boxpad2{
-    padding: 35px 10px 10px 10px;
-}
-.checked {
-  color: orange;
-}
-.font1{
-  font-family: Roboto,Arial,sans-serif;
-  font-weight: normal;
-}
-.del{
-  font-weight: bold;
-}
-.lineh{
-  line-height: 60%;
-}
+        a:hover {
+            text-decoration: none;
+        }
 
-body
-  {
-  background-color:rgb(250, 240, 240);
-  }
-.text
-{
-  color: white;
-  font-size: 14px;
-}
-.nav-bcolor{
-  background-color: lightseagreen;
-}
-.card
-{
-  border: none;
-}
-.header
-{
-  background-color:#4e71ba;
-  transition: all 0.5s;
-  z-index: 997;
-  padding: 10px 0;
-}
-.bgcolor
-{
-  background-color: white;
-  padding: 20px 20px 20px 20px;
-}
-.nav-l
-{
-  color: white;
-  font-size: 20px;       }
-.box
-{
-  width: 200px;
-  height: 300px;
-  border: 2px solid black;
-}
-.box2
-{
-  border: 2px cadetblue double;
-  text-align: center;
-}
-  #menu1{
-  background-color: #2CBDBB;
-}
+        li a {
+            color: white;
+        }
 
+        .imgphn1 {
+            max-width: 100px;
+            max-height: 200px;
+        }
+
+        /* Full-width input fields */
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Set a style for all buttons */
+        .button1 {
+            background-color: #4e71ba;
+            color: white;
+            padding: 5px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button2 {
+            padding-left: 300px;
+        }
+
+        #btn1 {
+            background-color: #4e71ba;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 95%;
+        }
+
+        #btn3 {
+            background-color: red;
+            color: white;
+            padding: 5px 20px;
+            border: none;
+            cursor: pointer;
+            width: 30%;
+        }
+
+        #btn4 {
+            background-color: green;
+            color: white;
+            padding: 5px 20px;
+            border: none;
+            cursor: pointer;
+            width: 30%;
+        }
+
+        #btn5 {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 30%;
+        }
+
+        .btn6 {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            width: 8%;
+        }
+
+        }
+
+        .btn7 {
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        /* Center the image and position the close button */
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 6px;
+            top: 0;
+            width: 99%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            padding-top: 60px;
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            padding: 0px 20px 30px 20px;
+            margin: 5% auto 15% auto;
+            /* 5% from the top, 15% from the bottom and centered */
+            border: 2px solid #888;
+            width: 30%;
+            /* Could be more or less, depending on screen size */
+        }
+
+        /* The Close Button (x) */
+        .close {
+            position: absolute;
+            right: -10px;
+            top: -25px;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close1 {
+            position: absolute;
+            right: -10px;
+            top: -35px;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close1:hover,
+        .close1 :focus,
+        .close:focus {
+            color: red;
+            cursor: pointer;
+        }
+
+        /* Add Zoom Animation */
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
+
+        @-webkit-keyframes animatezoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+
+        .imgphnbox {
+            max-width: 100px;
+            max-height: 200px;
+        }
+
+        .imgproduct {
+            max-width: 300px;
+            max-height: 500px;
+        }
+
+        .boxpad2 {
+            padding: 35px 10px 10px 10px;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .font1 {
+            font-family: Roboto, Arial, sans-serif;
+            font-weight: normal;
+        }
+
+        .del {
+            font-weight: bold;
+        }
+
+        .lineh {
+            line-height: 60%;
+        }
+
+        body {
+            background-color: rgb(250, 240, 240);
+        }
+
+        .text {
+            color: white;
+            font-size: 14px;
+        }
+
+        .nav-bcolor {
+            background-color: lightseagreen;
+        }
+
+        .card {
+            border: none;
+        }
+
+        .header {
+            background-color: #4e71ba;
+            transition: all 0.5s;
+            z-index: 997;
+            padding: 10px 0;
+        }
+
+        .bgcolor {
+            background-color: white;
+            padding: 20px 20px 20px 20px;
+        }
+
+        .nav-l {
+            color: white;
+            font-size: 20px;
+        }
+
+        .box {
+            width: 200px;
+            height: 300px;
+            border: 2px solid black;
+        }
+
+        .box2 {
+            border: 2px cadetblue double;
+            text-align: center;
+        }
+
+        #menu1 {
+            background-color: #2CBDBB;
+        }
     </style>
-    
+
 </head>
 
 <body>
@@ -341,7 +403,7 @@ body
 
         <!-- nav bar -->
 
-        <header  class="top-fixed header">
+        <header class="top-fixed header">
             <nav class="navbar navbar-expand-lg navbar-dark ">
                 <h3 style="padding-right:130px; color: white;">Shop-Cart</h3>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -358,12 +420,34 @@ body
                     </form>
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index" style="font-size:20px"><i class="fa fa-fw fa-home"></i>Home</a>
+                            <a class="nav-link" href="index" style="font-size:20px"><i
+                                    class="fa fa-fw fa-home"></i>Home</a>
+                        </li>
+
+                        <li class="nav-item active dropdown">
+                            @if(session()->has('user_id'))
+                            <a class="nav-link dropdown-toggle" href="logout" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" name="login"
+                                style="padding-right:20px; font-size:20px;"><i class="fa fa-fw fa-user"></i>
+                                <p>{{session('user_id')}}</p>
+                            </a>
+
+                            <ul class="dropdown-menu" id="navbarDropdown" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="logout">Logout</a></li>
+                            </ul>
+                            @else
+                            <a class="nav-link" href="login" name="login" style="padding-right:20px; font-size:20px;"><i
+                                    class="fa fa-fw fa-user"></i>
+                                <p>Login</p>
+                            </a>
+                            @endif
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="login" style="padding-right:20px; font-size:20px;"><i class="fa fa-fw fa-user"></i>Login</a>
-                        </li>
-                        <li class="nav-item active">   
                             <a class="nav-link" href="cart" style="font-size:20px"><i class="fa"></i> Cart</a>
                         </li>
                     </ul>
@@ -374,24 +458,24 @@ body
         <div class="div top"></div>
 
 
-        
+
 
         <!-- menu -->
 
-            <div class="row" id="menu1">   
-                    <div class="col-md-3 col-6">
-                    <center><a class="nav-l" href="product">Mobile</a></center>
-                    </div>
-                    <div class="col-md-3 col-6">
-                    <center><a class="nav-l" href="product">Laptop</a></center>
-                    </div>
-                    <div class="col-md-3 col-6">
-                    <center><a class="nav-l" href="product">Tv</a></center>
-                    </div>
-                    <div class="col-md-3 col-6">
-                    <center><a class="nav-l" href="product">Accesories</a></center>
-                    </div>
-            </div><br>
+        <div class="row" id="menu1">
+            <div class="col-md-3 col-6">
+                <center><a class="nav-l" href="mobile">Mobile</a></center>
+            </div>
+            <div class="col-md-3 col-6">
+                <center><a class="nav-l" href="laptop">Laptop</a></center>
+            </div>
+            <div class="col-md-3 col-6">
+                <center><a class="nav-l" href="tv">Tv</a></center>
+            </div>
+            <div class="col-md-3 col-6">
+                <center><a class="nav-l" href="accesories">Accesories</a></center>
+            </div>
+        </div><br>
 
 
 
@@ -431,20 +515,32 @@ body
             <div class="row">
                 <div class="col-md-4 col-12 boxpad">
                     <div class="box2 bgcolor">
-                    <center><h4>MONEY BACK</h4></center>
-                    <center><p>30 DAY MONEY BACK GUARANTEE</p></center>
+                        <center>
+                            <h4>MONEY BACK</h4>
+                        </center>
+                        <center>
+                            <p>30 DAY MONEY BACK GUARANTEE</p>
+                        </center>
                     </div>
                 </div>
                 <div class="col-md-4 col-6 boxpad">
                     <div class="box2 bgcolor">
-                    <center><h4>SPECIAL SALE</h4></center>
-                    <center><P>ALL ITEMS UP TO 20% OFF</P></center>
+                        <center>
+                            <h4>SPECIAL SALE</h4>
+                        </center>
+                        <center>
+                            <P>ALL ITEMS UP TO 20% OFF</P>
+                        </center>
                     </div>
                 </div>
                 <div class="col-md-4 col-6 boxpad">
                     <div class="box2 bgcolor">
-                    <center><h4>FREE SHIPPING</h4></center>
-                    <center><p>FREE SHIP-ON ORDER OVER RS:600</p></center>
+                        <center>
+                            <h4>FREE SHIPPING</h4>
+                        </center>
+                        <center>
+                            <p>FREE SHIP-ON ORDER OVER RS:600</p>
+                        </center>
                     </div>
                 </div>
             </div>
@@ -462,102 +558,41 @@ body
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-interval="10000">
                         <div class="row ">
-                            <div class=" card col-md-3 col-6 d-flex justify-content-center">
-                                <center><a href="#"><img src="{{asset('images/productimage/mobile/1/mi-redmi3.jpeg')}}"
-                                style="max-width:100px; max-height:200px;" alt=""></a></center>
-                                <center>
-                                    <div>
-                                        <h5>Redmi note 5 pro</h5>
-                                        <h6>Rs:5999</h6>
-                                    </div>
-                                </center>
-                            </div>
+                            @foreach($data8 as $Data8)
                             <div class="card col-md-3 col-6 d-flex justify-content-center">
-                                <center><a href="#"><img src="{{asset('images/productimage/mobile/2/iphone6.jpeg')}}"
+                                <center><a href="#"><img src="/storage/profile/{{$Data8->image1}}"
                                             style="max-width:100px; max-height:200px;" alt=""></a></center>
                                 <center>
                                     <div>
-                                        <h5>iphone 6</h5>
-                                        <h6>Rs:18500</h6>
+                                        <h5>{{$Data8->name}}</h5>
+                                        <h6>{{$Data8->price}}</h6>
                                     </div>
                                 </center>
                             </div>
-                            <div class="card col-md-3 col-6 d-flex justify-content-center">
-                                <center><a href="#"><img
-                                            src="{{asset('images/productimage/mobile/3/mi-redmi-note-4-1.jpeg')}}"
-                                            style="max-width:100px; max-height:200px;" alt=""></a></center>
-                                <center>
-                                    <div>
-                                        <h5>Mi redmi note4</h5>
-                                        <h6>Rs:9999</h6>
-                                    </div>
-                                </center>
-                            </div>
-                            <div class="card col-md-3 col-6 d-flex justify-content-center">
-                                <center><a href="#"><img src="{{asset('images/productimage/mobile/4/lenovo-k6.jpeg')}}"
-                                style="max-width:100px; max-height:200px;" alt=""></a></center>
-                                <center>
-                                    <div>
-                                        <h5>Lenovo K6</h5>
-                                        <h6>Rs:11500</h6>
-                                    </div>
-                                </center>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                     <div class="carousel-item ">
                         <div class="row">
+                            @foreach($data9 as $Data9)
                             <div class="card col-md-3 col-6 d-flex justify-content-center">
-                                <center> <a href="#"><img
-                                            src="{{asset('images/productimage/mobile/5/lenovo-k5-note-pa330010in-1.jpeg')}}"
+                                <center><a href="#"><img src="/storage/profile/{{$Data9->image1}}"
                                             style="max-width:100px; max-height:200px;" alt=""></a></center>
                                 <center>
                                     <div>
-                                        <h5>Lenovo Vibe</h5>
-                                        <h6>Rs:8500</h6>
+                                        <h5>{{$Data9->name}}</h5>
+                                        <h6>{{$Data9->price}}</h6>
                                     </div>
                                 </center>
                             </div>
-                            <div class="card col-md-3 col-6 d-flex justify-content-center">
-                                <center><a href="#"><img
-                                            src="{{asset('images/productimage/mobile/6/micromax-canvas-mega-4g-1.jpeg')}}"
-                                            style="max-width:100px; max-height:200px;" alt=""></a></center>
-                                <center>
-                                    <div>
-                                        <h5>Micromax canvas 2</h5>
-                                        <h6>Rs:5900</h6>
-                                    </div>
-                                </center>
-                            </div>
-                            <div class="card col-md-3 col-6 d-flex justify-content-center">
-                                <center><a href="#"><img
-                                            src="{{asset('images/productimage/mobile/7/samsung-galaxy-on7-sm-1.jpeg')}}"
-                                            style="max-width:100px; max-height:200px;" alt=""></a></center>
-                                <center>
-                                    <div>
-                                        <h5>Samsung galaxy j6</h5>
-                                        <h6>Rs:10500</h6>
-                                    </div>
-                                </center>
-                            </div>
-                            <div class="card col-md-3 col-6 d-flex justify-content-center">
-                                <center><a href="#"><img
-                                            src="{{asset('images/productimage/mobile/8/oppo-a57-na-original-1.jpeg')}}"
-                                            style="max-width:100px; max-height:200px;" alt=""></a></center>
-                                <center>
-                                    <div>
-                                        <h5>Oppa A57</h5>
-                                        <h6>Rs:10500</h6>
-                                    </div>
-                                </center>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleInterval"  role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -580,41 +615,24 @@ body
 
         <!-- Laptop -->
         <section class="bgcolor">
-            <a href="#">
+            <a href="laptop">
                 <h5 class="view">VIEW ALL</h5>
             </a>
             <hr>
             <div class="card-group">
+                @foreach($data10 as $Data10)
                 <div class="card">
-                    <center><a href="#"><img src="{{asset('images/productimage/laptop/glap.jpg')}}" style="max-width:200px; max-height:150px;"
-                                alt=""></a></center>
+                    <center><a href="#"><img src="/storage/profile/{{$Data10->image1}}"
+                                style="max-width:200px; max-height:150px;" alt=""></a></center>
                     <center>
                         <center>
                             <div class="card-body">
-                                <h5 class="card-title">Msi</h5>
-                                <p class="card-text"><small class="text-muted">Rs: 98500</small></p>
+                                <h5 class="card-title">{{$Data10->name}}</h5>
+                                <p class="card-text"><small class="text-muted">{{$Data10->price}}</small></p>
                             </div>
                         </center>
                 </div>
-                <div class="card">
-                    <center><a href="#"><img src="{{asset('images/productimage/laptop/14/lenovo-ideapad-notebook-original-1.jpeg')}}" style="max-width:200px; max-height:150px;" alt=""></a></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">Lenovo</h6>
-                            <p class="card-text"><small class="text-muted">Rs: 38999</small></p>
-                        </div>
-                    </center>
-                </div>
-                <div class="card">
-                    <center><a href="#"><img src="{{asset('images/productimage/laptop/71K7P66CGnL._AC_SY355_.jpg')}}" style="max-width:200px; max-height:150px;"
-                                 alt=""></a></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">Hp pavallion</h6>
-                            <p class="card-text"><small class="text-muted">Rs: 35000</small></p>
-                        </div>
-                    </center>
-                </div>
+                @endforeach
             </div>
         </section><br>
 
@@ -623,208 +641,83 @@ body
 
         <!-- accesories -->
         <section class="bgcolor">
-            <a href="#">
+            <a href="accesories">
                 <h5 class="view">VIEW ALL</h5>
             </a>
             <hr>
             <div class="card-group">
+            @foreach($data4 as $Data4)
                 <div class="card">
-                    <center><img src="{{asset('images/productimage/access/61lnzTv2a0L._AC_SL1000_.jpg')}}"
+                    <center><img src="/storage/profile/{{$Data4->image1}}"
                             class="card-img-top imghead boxpad" alt="..."></center>
                     <center>
                         <div class="card-body">
-                            <h6 class="card-title">Sony ZX110A Wired Headset with Mic</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span> 1800</small></p>
+                            <h6 class="card-title">{{$Data4->name}}</h6>
+                            <p class="card-text"><small class="text-muted"><span>&#8377;</span>{{$Data4->price}}</small></p>
                         </div>
                     </center>
                 </div>
-                <div class="card">
-                    <center><img src="{{asset('images/productimage/access/download (3).jpg')}}"
-                            class="card-img-top imghead boxpad" alt="..."></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">boAt Rockerz 450 Bluetooth Headset</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span> 1499</small></p>
-                        </div>
-                    </center>
-                </div>
-                <div class="card">
-                    <center><img src="{{asset('images/productimage/access/download.jpg')}}"
-                            class="card-img-top imghead boxpad" alt="..."></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">Boult Audio Thunder Bluetooth Headset</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span> 1299</small></p>
-                        </div>
-                    </center>
-                </div>
-                <div class="card">
-                    <center><img src="{{asset('images/productimage/access/images (3).jpg')}}"
-                            class="card-img-top imghead boxpad" alt="..."></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">boAt Rockerz 510 Super Extra Bass Bluetooth Headset</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span> 1899</small></p>
-                        </div>
-                </div>
-                <div class="card">
-                    <center><img src="{{asset('images/productimage/access/images (1).jpg')}}"
-                            class="card-img-top imghead boxpad" alt="..."></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">Redmi SonicBass Neckband Bluetooth Headset</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span> 999</small></p>
-                        </div>
-                    </center>
-                </div>
-                <div class="card">
-                    <center><img src="{{asset('images/productimage/access/images.jpg')}}"
-                            class="card-img-top imghead boxpad" alt="..."></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">OnePlus Bullets Wireless Z Bluetooth Headset</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span> 899</small></p>
-                        </div>
-                </div>
-                </center>
+            @endforeach
             </div>
         </section><br>
 
 
 
-        <!-- tv  -->
+        <!-- laptop  -->
         <section class="bgcolor">
-            <a href="#">
+            <a href="tv">
                 <h5 class="view">VIEW ALL</h5>
             </a>
             <hr>
             <div class="card-group">
+                @foreach($data5 as $Data5)
                 <div class="card">
-                    <center><a href="#"><img src="{{asset('images/productimage/tv/samsung.jpg')}}" class="imgtv"
-                                alt=""></a></center>
+                    <center><img style="max-width:200px; max-height:150px;" src="/storage/profile/{{$Data5->image1}}"></center>
                     <center>
                         <div class="card-body">
-                            <h6 class="card-title">Sony ZX110A Wired Headset with Mic</h6>
-                            <p class="card-text"><span>&#8377;</span> 1800</p>
+                            <h6 class="card-title">{{$Data5->name}}</h6>
+                            <p class="card-text"><small class="text-muted">{{$Data5->price}}</small></p>
                         </div>
                     </center>
                 </div>
-                <div class="card">
-                    <center><a href="#"><img src="{{asset('images/productimage/tv/download.jpg')}}" class="imgtv"
-                                alt=""></a></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">boAt Rockerz 450 Bluetooth Headset</h6>
-                            <p class="card-text"><span>&#8377;</span> 1499</p>
-                        </div>
-                    </center>
-                </div>
-                <div class="card">
-                    <center> <a href="#"><img src="{{asset('images/productimage/tv/realme-tv-32-138421-large-1.jpg')}}"
-                                class="imgtv" alt=""></a></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">Boult Audio Thunder Bluetooth Headset</h6>
-                            <p class="card-text"><span>&#8377;</span> 1299</p>
-                        </div>
-                    </center>
-                </div>
-                <div class="card">
-                    <center><a href="#"><img src="{{asset('images/productimage/tv/motorolatv.jpeg')}}" class="imgtv"
-                                alt=""></a></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">boAt Rockerz 510 Super Extra Bass Bluetooth Headset</h6>
-                            <p class="card-text"><span>&#8377;</span> 1899</p>
-                        </div>
-                </div>
+                @endforeach        
             </div>
         </section><br>
+
         <!-- Tv box -->
         <section>
             <div class="card-group bgcolor">
-                <div class="col-md-6 col-12 boxpad">
-                    <center><a href="#"><img src="{{asset('images/black.jpg')}}"
-                                style="max-width: 30rem; max-height:230px;" class="card-img-top" alt="..."></a></center>
+            @foreach($data6 as $Data6)
+                <div class="col-md-4 col-12 boxpad">
+                    <center><a href="#"><img src="/storage/profile/{{$Data6->image1}}"
+                                style="max-width: 300px; max-height:230px;" class="card-img-top" alt="..."></a></center>
+                    <center><h6 class="card-title">{{$Data6->name}}</h6>
+                            <p class="card-text"><small class="text-muted"><span>&#8377;</span>{{$Data6->price}}</small></p></center>
                 </div>
-                <div class="col-md-6 col-12 boxpad">
-                    <center><a href="#"><img src="{{asset('images/black2.jpg')}}"
-                                style="max-width: 30rem; max-height:230px;" class="card-img-top " alt="..."></a>
-                    </center>
-                </div>
+            @endforeach
             </div>
         </section><br>
 
         <!-- Mobile -->
         <section class="bgcolor">
-            <a href="#">
+            <a href="mobile">
                 <h5 class="view">VIEW ALL</h5>
             </a>
             <hr>
             <div class="card-group">
+            @foreach($data7 as $Data7)
                 <div class="card">
-                    <center><img
-                            src="{{asset('images/productimage/mobile/10/133272-v7-vivo-s1-mobile-phone-large-1.jpg')}}"
-                            class="card-img-top boxpad imgphn1" alt="..."></center>
+                    <center><img style="height:90px; width:50px;" class="card-img-top boxpad imgphn1" src="/storage/profile/{{$Data7->image1}}"></center>
                     <center>
+                        
                         <div class="card-body">
-                            <h6 class="card-title">Vivo S1</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span> 14999</small></p>
+                            <h6 class="card-title">{{$Data7->name}}</h6>
+                            <p class="card-text"><small class="text-muted"><span>&#8377;</span>{{$Data7->price}}</small></p>
                         </div>
+                       
                     </center>
-                </div>
-                <div class="card">
-                    <center><img src="{{asset('images/productimage/mobile/10/71wPwmxo2NL._SL1500_.jpg')}}"
-                            class="card-img-top boxpad imgphn1" alt="..."></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">Oppo A5 2020</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span> 15999</small></p>
-                        </div>
-                    </center>
-                </div>
-                <div class="card">
-                    <center><img src="{{asset('images/productimage/mobile/10/iphone11.jpg')}}"
-                            class="card-img-top imgphn1 boxpad" alt="..."></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">Iphone 11</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span> 75000</small></p>
-                        </div>
-                    </center>
-                </div>
-                <div class="card">
-                    <center><img src="{{asset('images/productimage/mobile/10/718assbhZlL._SX679_.jpg')}}"
-                            class="card-img-top imgphn1 boxpad" alt="..."></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">Samsung M10</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span> 19500</small></p>
-                        </div>
-                </div>
-                <div class="card">
-                    <center><img
-                            src="{{asset('images/productimage/mobile/10/134177-v9-xiaomi-redmi-k20-mobile-phone-large-1.jpg')}}"
-                            class="card-img-top imgphn1 boxpad" alt="..."></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">Redmi K20</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span> 25000</small></p>
-                        </div>
-                    </center>
-                </div>
-                <div class="card">
-                    <center><img
-                            src="{{asset('images/productimage/mobile/10/129877-v7-apple-iphone-xr-mobile-phone-large-1.jpg')}}"
-                            class="card-img-top imgphn1 boxpad" alt="..."></center>
-                    <center>
-                        <div class="card-body">
-                            <h6 class="card-title">iphone xr</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span> 65899</small></p>
-                        </div>
-                </div>
-                </center>
             </div>
+            @endforeach
         </section><br>
 
 

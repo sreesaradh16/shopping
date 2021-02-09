@@ -79,22 +79,22 @@
             <div class="form-group row">
                 <label class="col-sm-3 col-form-label">Enter your current password</label>
                 <div class="col-sm-4">
-                    <input type="email" class="form-control">
+                    <input type="password" name="currentpassword" class="form-control">
                 </div>
              </div>
             <div class="form-group row">
                 <label class="col-sm-3 col-form-label">Enter your new password</label>
                 <div class="col-sm-4">
-                    <input type="password" class="form-control" id="inputPassword3">
+                    <input type="password" name="newpassword" class="form-control" id="inputPassword3">
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-3 col-form-label">Re-enter your new password</label>
                 <div class="col-sm-4">
-                    <input type="password" class="form-control" id="inputPassword3">
+                    <input type="password" name="confirmnewpassword" class="form-control" id="inputPassword3">
                 </div>
             </div>
-            <input type="submit" id="btnpc" class="btn btn-success" value="Submit">
+            <input type="submit" id="btnpc" class="btn btn-success" value="Submit" onclick="return confirm('are you sure you want to change your password') ">
     </div>
 </body>
 

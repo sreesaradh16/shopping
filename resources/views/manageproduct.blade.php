@@ -74,54 +74,56 @@
     </head>
 
     <body>
-        <div class="wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="span9">
-                        <div class="content">
-
-                            <div class="module">
-                                <div class="module-head">
-                                    <h3>Manage Products</h3>
-                                </div>
-                                <div class="module-body table">
-                
-                                    <div class="alert alert-error">
-                                        <button type="button" class="close" data-dismiss="alert">×</button>
-                                        <strong>Oh snap!</strong>
-                                    </div>
-                                
-
-                                    <br />
-
-
-                                    <table cellpadding="0" cellspacing="0" border="0"
-                                        class="datatable-1 table table-bordered table-striped	 display" width="100%">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>Product Name</th>
-                                                <th>Category </th>
-                                                <th>Company Name</th>
-                                                <th>Product Creation Date</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                    </table>
-                                </div>
-                            </div>
-
-
-
+        <div class="container">
+            <div class="form-row">
+                <div class="col-md-12">
+                    <h3>Manage Products</h3>
+                    <div class="control-group">
+                        <div class="controls">
+                            <select name="category" class="span8 tip" onChange="getSubcat(this.value);" >
+                                <option value="allcategory">All Category</option>
+                                <option value="mobile">Mobile</option>
+                                <option value="laptop">Laptop</option>
+                                <option value="tv">TV</option>
+                                <option value="accesories">Accesories</option>
+                            </select>
                         </div>
-                        <!--/.content-->
+                     </div><br>
+                    <div class="module-body table">
+                        <table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Category </th>
+                                <th>Company Name</th>
+                                <th>Product Price</th>
+                                <th>Product Shipping charge</th>
+                                <th>Product Availability</th>
+                                <th>image-1</th>
+                                <th>image-2</th>
+                                <th>image-3</th>
+                                <th>Action</th>
+                                <th>Action</th>
+
+                            </tr>
+                            @foreach($data as $Data1)
+                            <tr>
+                                <td>{{$Data1->name}}</td>
+                                <td>{{$Data1->category}}</td>
+                                <td>{{$Data1->company}}</td>
+                                <td>{{$Data1->price}}</td>
+                                <td>{{$Data1->shippingcharge}}</td>
+                                <td>{{$Data1->availability}}</td>
+                                <td><img style="height:90px; width:50px;" src="/storage/profile/{{$Data1->image1}}"></td>
+                                <td><img style="height:90px; width:50px;" src="/storage/profile/{{$Data1->image2}}"></td>
+                                <td><img style="height:90px; width:50px;" src="/storage/profile/{{$Data1->image3}}"></td>
+                                <td><a onclick="return confirm('are you sure')" href="{{url('updateproduct/'.$Data1->id)}}">update</a></td>
+                                <td><a onclick="return confirm('are you sure')" href="{{url('deleteproduct/'.$Data1->id)}}">delete</a></td>
+                            </tr>
+                            @endforeach
+                        </table>
                     </div>
-                    <!--/.span9-->
                 </div>
             </div>
-            <!--/.container-->
-        </div>
-        <!--/.wrapper-->
 
     </body>
 </html>

@@ -16,13 +16,12 @@
     <link rel="stylesheet" href="{{asset('css/index.js')}}">
 </head>
 
-
 <body>
     <div class="container-fluid">
 
-        <!-- nav bar -->
+         <!-- nav bar -->
 
-        <header  class="top-fixed header">
+         <header  class="top-fixed header">
             <nav class="navbar navbar-expand-lg navbar-dark ">
                 <h3 style="padding-right:130px; color: white;">Shop-Cart</h3>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -66,37 +65,32 @@
             </nav>
         </header>
         <div class="div top"></div>
-			<div class="row">
-				<div class="col-md-4 col-8">
-                       
-				        <div class="col-md-12">
-                        @foreach($data2 as $Data2)
-                            <center><img src="/storage/profile/{{$Data2->image1}}" class="card-img imgproduct" alt="..."></center>
-                        @endforeach
-                        </div>
-                        
-				</div>
-				<div class="col-md-6">
-				<div class="card-body font1">
-                        @foreach($data as $Data1)
-                        <h3 class="card-title">{{$Data1->company}}</h3>
-                        <h5 class="card-title">{{$Data1->name}}</h5>
-					    <h4>{{$Data1->price}}</h4>
-                        <p>Delivery by <span class="del">Sunday, Nov15</span></p>
-                        <p>Shipping Charge{{$Data1->shippingcharge}}</p>
-                        <div>
-                            <h4>{{$Data1->description}}</h4>
-                        </div>
-                        <h4 style="color:green">{{$Data1->availability}}</h4>
-                        @endforeach <br>
-                        <button id="btn3">ADD TO CART</button>
-                        <a href="checkout"><button id="btn4">BUY NOW</button></a>
-                        
-				</div>
-			</div>
-        </div>
 
-     </div>
+        <div class="row">
+            @foreach($data as $Data1)
+            <div class="col-md-4" style="padding:10px">
+                <div class="card">
+                    <div class="form-row">
+                        <div class="col-md-5">
+                            <img src="{{asset('images/productimage/mobile/1/mi-redmi3.jpeg')}}" class="card-img-top"
+                            alt="...">
+                        </div>
+                        <div class="col-md-7">
+                            <h4 class="card-title">{{$Data1->name}}</h4>
+                            <h5 class="card-title">{{$Data1->company}}</h5>
+                            <h6>{{$Data1->price}}</h6>
+                            <p>Delivery by <span class="del">Sunday, Nov15</span></p>
+                            <p>Shipping Charge{{$Data1->shippingcharge}}</p>
+                            <p>{{$Data1->description}}</p>
+                            <h5 style="color:green">{{$Data1->availability}}</h5>
+                            <a href="checkout/{{$Data1->id}}"><button  class="btn btn-primary">Buynow</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
 </body>
 
 </html>
