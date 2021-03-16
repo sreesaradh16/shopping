@@ -116,7 +116,7 @@
                                 <td><img style="height:90px; width:50px;" src="/storage/profile/{{$Data1->image1}}"></td>
                                 <td><img style="height:90px; width:50px;" src="/storage/profile/{{$Data1->image2}}"></td>
                                 <td><img style="height:90px; width:50px;" src="/storage/profile/{{$Data1->image3}}"></td>
-                                <td><a onclick="return confirm('are you sure')" href="{{url('updateproduct/'.$Data1->id)}}">update</a></td>
+                                <td><a  href="{{url('updateproduct1/{id}'.$Data1->id)}}">update</a></td>
                                 <td><a onclick="return confirm('are you sure')" href="{{url('deleteproduct/'.$Data1->id)}}">delete</a></td>
                             </tr>
                             @endforeach

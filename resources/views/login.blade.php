@@ -1,4 +1,5 @@
-
+@extends('home')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,13 +22,6 @@
 
     <link rel="stylesheet" href="{{asset('css/index.css')}}">
     <link rel="stylesheet" href="{{asset('css/index.js')}}">
-    <style>
-        body
-        {
-            background-image: url('{{asset('images/background.jpg')}}');
-        }
-        
-    </style>
 
     <script type="text/javascript">
         function regval() {
@@ -128,8 +122,6 @@
                         
                     </div>
                 </form>
-                <br><br><br><br><br><br><br><br><br><br>
-                <a href="index"><i style="padding:10px 15px" class="fa fa-home fa-2x"></i></a>
             </div>
             <div class="col-md-6">
                 <form action="{{url('index')}}" method="post">
@@ -226,3 +218,4 @@
 </body>
 
 </html>
+@endsection

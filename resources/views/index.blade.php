@@ -1,4 +1,5 @@
-
+@extends('home')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,447 +23,13 @@
     <link rel="stylesheet" href="{{asset('css/index.css')}}">
     <link rel="stylesheet" href="{{asset('css/index.js')}}">
 
-
-    <style>
-        .nav-menu ul li {
-            position: relative;
-            white-space: nowrap;
-            padding: 10px 0 10px 28px;
-            list-style-type: none;
-        }
-
-        .nav-menu ul {
-            display: flex;
-        }
-
-        .top-fixed {
-            position: fixed;
-            top: 0;
-            right: 0;
-            left: 0;
-            z-index: 1030;
-        }
-
-        .ul {
-            display: block;
-            list-style-type: disc;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            padding-inline-start: 40px;
-        }
-
-        .align-items-center {
-            align-items: center !important;
-        }
-
-        .d-flex {
-            display: flex !important;
-        }
-
-        .nav-menu2 {
-            position: relative;
-            white-space: nowrap;
-            padding: 10px 0 10px 0px;
-            list-style-type: none;
-        }
-
-        .social {
-            list-style-type: disc;
-        }
-
-        .top {
-            height: 100px;
-        }
-
-        .imgtv {
-            max-width: 282px;
-            max-height: 176px;
-        }
-
-        .imghead {
-            max-height: 200px;
-            max-width: 200px;
-        }
-
-        .boxpad {
-            padding: 5px 5px 5px 5px;
-        }
-
-        .view {
-            text-decoration: none;
-            text-align: right;
-            padding-right: 30px;
-
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        li a {
-            color: white;
-        }
-
-        .imgphn1 {
-            max-width: 100px;
-            max-height: 200px;
-        }
-
-        /* Full-width input fields */
-        input[type=text],
-        input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        /* Set a style for all buttons */
-        .button1 {
-            background-color: #4e71ba;
-            color: white;
-            padding: 5px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        .button2 {
-            padding-left: 300px;
-        }
-
-        #btn1 {
-            background-color: #4e71ba;
-            color: white;
-            border: none;
-            cursor: pointer;
-            width: 95%;
-        }
-
-        #btn3 {
-            background-color: red;
-            color: white;
-            padding: 5px 20px;
-            border: none;
-            cursor: pointer;
-            width: 30%;
-        }
-
-        #btn4 {
-            background-color: green;
-            color: white;
-            padding: 5px 20px;
-            border: none;
-            cursor: pointer;
-            width: 30%;
-        }
-
-        #btn5 {
-            background-color: green;
-            color: white;
-            border: none;
-            cursor: pointer;
-            width: 30%;
-        }
-
-        .btn6 {
-            background-color: green;
-            color: white;
-            border: none;
-            cursor: pointer;
-            width: 50%;
-        }
-
-        .carousel-control-next,
-        .carousel-control-prev {
-            width: 8%;
-        }
-
-        }
-
-        .btn7 {
-            background-color: red;
-            color: white;
-            border: none;
-            cursor: pointer;
-            width: 50%;
-        }
-
-        button:hover {
-            opacity: 0.8;
-        }
-
-        /* Extra styles for the cancel button */
-        .cancelbtn {
-            width: auto;
-            padding: 10px 18px;
-            background-color: #f44336;
-        }
-
-        /* Center the image and position the close button */
-        .imgcontainer {
-            text-align: center;
-            margin: 24px 0 12px 0;
-            position: relative;
-        }
-
-        span.psw {
-            float: right;
-            padding-top: 16px;
-        }
-
-        /* The Modal (background) */
-        .modal {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            /* Stay in place */
-            z-index: 1;
-            /* Sit on top */
-            left: 6px;
-            top: 0;
-            width: 99%;
-            /* Full width */
-            height: 100%;
-            /* Full height */
-            overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4);
-            /* Black w/ opacity */
-            padding-top: 60px;
-        }
-
-        /* Modal Content/Box */
-        .modal-content {
-            background-color: #fefefe;
-            padding: 0px 20px 30px 20px;
-            margin: 5% auto 15% auto;
-            /* 5% from the top, 15% from the bottom and centered */
-            border: 2px solid #888;
-            width: 30%;
-            /* Could be more or less, depending on screen size */
-        }
-
-        /* The Close Button (x) */
-        .close {
-            position: absolute;
-            right: -10px;
-            top: -25px;
-            color: #000;
-            font-size: 35px;
-            font-weight: bold;
-        }
-
-        .close1 {
-            position: absolute;
-            right: -10px;
-            top: -35px;
-            color: #000;
-            font-size: 35px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close1:hover,
-        .close1 :focus,
-        .close:focus {
-            color: red;
-            cursor: pointer;
-        }
-
-        /* Add Zoom Animation */
-        .animate {
-            -webkit-animation: animatezoom 0.6s;
-            animation: animatezoom 0.6s
-        }
-
-        @-webkit-keyframes animatezoom {
-            from {
-                -webkit-transform: scale(0)
-            }
-
-            to {
-                -webkit-transform: scale(1)
-            }
-        }
-
-        @keyframes animatezoom {
-            from {
-                transform: scale(0)
-            }
-
-            to {
-                transform: scale(1)
-            }
-        }
-
-        /* Change styles for span and cancel button on extra small screens */
-        @media screen and (max-width: 300px) {
-            span.psw {
-                display: block;
-                float: none;
-            }
-
-            .cancelbtn {
-                width: 100%;
-            }
-        }
-
-        .imgphnbox {
-            max-width: 100px;
-            max-height: 200px;
-        }
-
-        .imgproduct {
-            max-width: 300px;
-            max-height: 500px;
-        }
-
-        .boxpad2 {
-            padding: 35px 10px 10px 10px;
-        }
-
-        .checked {
-            color: orange;
-        }
-
-        .font1 {
-            font-family: Roboto, Arial, sans-serif;
-            font-weight: normal;
-        }
-
-        .del {
-            font-weight: bold;
-        }
-
-        .lineh {
-            line-height: 60%;
-        }
-
-        body {
-            background-color: rgb(250, 240, 240);
-        }
-
-        .text {
-            color: white;
-            font-size: 14px;
-        }
-
-        .nav-bcolor {
-            background-color: lightseagreen;
-        }
-
-        .card {
-            border: none;
-        }
-
-        .header {
-            background-color: #4e71ba;
-            transition: all 0.5s;
-            z-index: 997;
-            padding: 10px 0;
-        }
-
-        .bgcolor {
-            background-color: white;
-            padding: 20px 20px 20px 20px;
-        }
-
-        .nav-l {
-            color: white;
-            font-size: 20px;
-        }
-
-        .box {
-            width: 200px;
-            height: 300px;
-            border: 2px solid black;
-        }
-
-        .box2 {
-            border: 2px cadetblue double;
-            text-align: center;
-        }
-
-        #menu1 {
-            background-color: #2CBDBB;
-        }
-    </style>
-
 </head>
 
 <body>
-    <div class="container-fluid">
 
-        <!-- nav bar -->
+<!-- menu -->
 
-        <header class="top-fixed header">
-            <nav class="navbar navbar-expand-lg navbar-dark ">
-                <h3 style="padding-right:130px; color: white;">Shop-Cart</h3>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <form class="form-inline my-2 my-lg-0 form-inline md-form mr-auto mb-4">
-                        <input class="form-control mr-sm-2" style="width:450px " type="search" placeholder="Search"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
-                            style="color: white;">Search</button>
-                    </form>
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index" style="font-size:20px"><i
-                                    class="fa fa-fw fa-home"></i>Home</a>
-                        </li>
-
-                        <li class="nav-item active dropdown">
-                            @if(session()->has('user_id'))
-                            <a class="nav-link dropdown-toggle" href="logout" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" name="login"
-                                style="padding-right:20px; font-size:20px;"><i class="fa fa-fw fa-user"></i>
-                                <p>{{session('user_id')}}</p>
-                            </a>
-
-                            <ul class="dropdown-menu" id="navbarDropdown" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Change Password</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="logout">Logout</a></li>
-                            </ul>
-                            @else
-                            <a class="nav-link" href="login" name="login" style="padding-right:20px; font-size:20px;"><i
-                                    class="fa fa-fw fa-user"></i>
-                                <p>Login</p>
-                            </a>
-                            @endif
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="cart" style="font-size:20px"><i class="fa"></i> Cart</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </nav>
-        </header>
-        <div class="div top"></div>
-
-
-
-
-        <!-- menu -->
-
-        <div class="row" id="menu1">
+<div class="row" id="menu1">
             <div class="col-md-3 col-6">
                 <center><a class="nav-l" href="mobile">Mobile</a></center>
             </div>
@@ -475,10 +42,8 @@
             <div class="col-md-3 col-6">
                 <center><a class="nav-l" href="accesories">Accesories</a></center>
             </div>
-        </div><br>
-
-
-
+        </div>
+    <br>
         <!-- new items -->
 
         <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
@@ -560,12 +125,12 @@
                         <div class="row ">
                             @foreach($data8 as $Data8)
                             <div class="card col-md-3 col-6 d-flex justify-content-center">
-                                <center><a href="#"><img src="/storage/profile/{{$Data8->image1}}"
+                                <center><a href="productdetails/{{$Data8->id}}"><img src="/storage/profile/{{$Data8->image1}}"
                                             style="max-width:100px; max-height:200px;" alt=""></a></center>
                                 <center>
                                     <div>
-                                        <h5>{{$Data8->name}}</h5>
-                                        <h6>{{$Data8->price}}</h6>
+                                        <a href="productdetails/{{$Data8->id}}"><h5>{{$Data8->name}}</h5></a>
+                                        <h6  class="card-text"><span>&#8377;</span>{{$Data8->price}}</h6>
                                     </div>
                                 </center>
                             </div>
@@ -576,12 +141,12 @@
                         <div class="row">
                             @foreach($data9 as $Data9)
                             <div class="card col-md-3 col-6 d-flex justify-content-center">
-                                <center><a href="#"><img src="/storage/profile/{{$Data9->image1}}"
+                                <center><a href="productdetails/{{$Data9->id}}"><img src="/storage/profile/{{$Data9->image1}}"
                                             style="max-width:100px; max-height:200px;" alt=""></a></center>
-                                <center>
+                                <center>   
                                     <div>
-                                        <h5>{{$Data9->name}}</h5>
-                                        <h6>{{$Data9->price}}</h6>
+                                        <a href="productdetails/{{$Data9->id}}"><h5>{{$Data9->name}}</h5></a>
+                                        <h6  class="card-text">{{$Data9->price}}</h6>
                                     </div>
                                 </center>
                             </div>
@@ -599,18 +164,6 @@
                 </div>
         </section><br>
 
-        <!-- laptop box -->
-        <section>
-            <div class="card-group bgcolor">
-                <div class="col-md-6 col-12 boxpad">
-                    <center><a href="#"><img src="{{asset('images/productimage/laptop/lapimg2.jpg')}}"
-                                style="max-width: 30rem; max-height:230px;" class="card-img-top" alt="..."></a></center>
-                </div>
-                <div class="col-md-6 col-12 boxpad">
-                    <center><a href="#"><img src="{{asset('images/productimage/laptop/lapimg.jpg')}}"
-                                style="max-width: 30rem; max-height:230px;" class="card-img-top" alt="..."></a></center>
-                </div>
-            </div>
         </section><br>
 
         <!-- Laptop -->
@@ -622,13 +175,13 @@
             <div class="card-group">
                 @foreach($data10 as $Data10)
                 <div class="card">
-                    <center><a href="#"><img src="/storage/profile/{{$Data10->image1}}"
+                    <center><a href="productdetails/{{$Data10->id}}"><img src="/storage/profile/{{$Data10->image1}}"
                                 style="max-width:200px; max-height:150px;" alt=""></a></center>
                     <center>
                         <center>
                             <div class="card-body">
-                                <h5 class="card-title">{{$Data10->name}}</h5>
-                                <p class="card-text"><small class="text-muted">{{$Data10->price}}</small></p>
+                                <h5 class="card-title"><a href="productdetails/{{$Data10->id}}">{{$Data10->name}}</a></h5>
+                                <h6  class="card-text"><span>&#8377;</span>{{$Data10->price}}</h6>
                             </div>
                         </center>
                 </div>
@@ -648,12 +201,12 @@
             <div class="card-group">
             @foreach($data4 as $Data4)
                 <div class="card">
-                    <center><img src="/storage/profile/{{$Data4->image1}}"
-                            class="card-img-top imghead boxpad" alt="..."></center>
+                    <center><a href="productdetails/{{$Data4->id}}"><img src="/storage/profile/{{$Data4->image1}}"
+                            class="card-img-top imghead boxpad" alt="..."></a></center>
                     <center>
                         <div class="card-body">
-                            <h6 class="card-title">{{$Data4->name}}</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span>{{$Data4->price}}</small></p>
+                            <h5 class="card-title"><a href="productdetails/{{$Data8->id}}">{{$Data4->name}}</a></h5>
+                            <h6 class="card-text"><span>&#8377;</span>{{$Data4->price}}</h6>
                         </div>
                     </center>
                 </div>
@@ -672,11 +225,11 @@
             <div class="card-group">
                 @foreach($data5 as $Data5)
                 <div class="card">
-                    <center><img style="max-width:200px; max-height:150px;" src="/storage/profile/{{$Data5->image1}}"></center>
+                    <center><a href="productdetails/{{$Data5->id}}"><img style="max-width:200px; max-height:150px;" src="/storage/profile/{{$Data5->image1}}"></a></center>
                     <center>
                         <div class="card-body">
-                            <h6 class="card-title">{{$Data5->name}}</h6>
-                            <p class="card-text"><small class="text-muted">{{$Data5->price}}</small></p>
+                            <h5 class="card-title"><a href="productdetails/{{$Data5->id}}">{{$Data5->name}}</a></h5>
+                            <h6 class="card-text"><span>&#8377;</span>{{$Data5->price}}</h6>
                         </div>
                     </center>
                 </div>
@@ -689,10 +242,10 @@
             <div class="card-group bgcolor">
             @foreach($data6 as $Data6)
                 <div class="col-md-4 col-12 boxpad">
-                    <center><a href="#"><img src="/storage/profile/{{$Data6->image1}}"
+                    <center><a href="productdetails/{{$Data6->id}}"><img src="/storage/profile/{{$Data6->image1}}"
                                 style="max-width: 300px; max-height:230px;" class="card-img-top" alt="..."></a></center>
-                    <center><h6 class="card-title">{{$Data6->name}}</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span>{{$Data6->price}}</small></p></center>
+                    <center><h5 class="card-title"><a href="productdetails/{{$Data6->id}}">{{$Data6->name}}</a></h5>
+                            <h6 class="card-text"><span>&#8377;</span>{{$Data6->price}}</h6></center>
                 </div>
             @endforeach
             </div>
@@ -707,12 +260,12 @@
             <div class="card-group">
             @foreach($data7 as $Data7)
                 <div class="card">
-                    <center><img style="height:90px; width:50px;" class="card-img-top boxpad imgphn1" src="/storage/profile/{{$Data7->image1}}"></center>
+                    <center><a href="productdetails/{{$Data7->id}}"><img style="height:90px; width:50px;" class="card-img-top boxpad imgphn1" src="/storage/profile/{{$Data7->image1}}"></a></center>
                     <center>
                         
                         <div class="card-body">
-                            <h6 class="card-title">{{$Data7->name}}</h6>
-                            <p class="card-text"><small class="text-muted"><span>&#8377;</span>{{$Data7->price}}</small></p>
+                            <h5 class="card-title"><a href="productdetails/{{$Data7->id}}">{{$Data7->name}}</a></h5>
+                            <h6 class="card-text"><span>&#8377;</span>{{$Data7->price}}</h6>
                         </div>
                        
                     </center>
@@ -823,3 +376,4 @@
 </body>
 
 </html>
+@endsection

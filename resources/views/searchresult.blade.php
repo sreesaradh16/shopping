@@ -21,38 +21,23 @@
 
     <link rel="stylesheet" href="{{asset('css/index.css')}}">
     <link rel="stylesheet" href="{{asset('css/index.js')}}">
+
+    <style>
+        
+    </style>
+
 </head>
 
 <body>
     <div class="container-fluid">
-
-
-    <!-- menu -->
-
-<div class="row" id="menu1">
-            <div class="col-md-3 col-6">
-                <center><a class="nav-l" href="mobile">Mobile</a></center>
-            </div>
-            <div class="col-md-3 col-6">
-                <center><a class="nav-l" href="laptop">Laptop</a></center>
-            </div>
-            <div class="col-md-3 col-6">
-                <center><a class="nav-l" href="tv">Tv</a></center>
-            </div>
-            <div class="col-md-3 col-6">
-                <center><a class="nav-l" href="accesories">Accesories</a></center>
-            </div>
-        </div>
-    <br>
-
         <div class="row">
             @foreach($data as $Data1)
             <div class="col-md-3" style="padding:10px">
                 <div class="card" style="padding:10px">
                     <div class="form-row">
                         <div class="col-md-4">
-                            <img src="{{asset('images/productimage/mobile/1/mi-redmi3.jpeg')}}" class="card-img-top"
-                            alt="...">
+                            <a href="productdetails/{{$Data1->id}}"><img src="/storage/profile/{{$Data1->image1}}" class="card-img-top"
+                            alt="..."></a>
                         </div>
                         <div class="col-md-7">
                             <h4 class="card-title">{{$Data1->name}}</h4>
@@ -62,7 +47,7 @@
                             <p>Shipping Charge{{$Data1->shippingcharge}}</p>
                             <p>{{$Data1->description}}</p>
                             <h5 style="color:green">{{$Data1->availability}}</h5>
-                            <a href="checkout/{{$Data1->id}}"><button  class="btn btn-primary">Buynow</button></a>
+                            <a href="{{url('add-to-cart/'.$Data1->id)}}"><button  class="btn btn-primary">Add to Cart</button></a>
                         </div>
                     </div>
                 </div>

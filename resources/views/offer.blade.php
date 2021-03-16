@@ -81,67 +81,18 @@
             <div class="controls">
                 <select name="category" class="span8 tip" onChange="getSubcat(this.value);" >
                     <option value="">Select Category</option>
-                    <option value="mobile">Mobile</option>
-                    <option value="laptop">Laptop</option>
-                    <option value="tv">TV</option>
-                    <option value="accesories">Accesories</option>
+                    <option value="mobile">Banner</option>
+                    <option value="laptop">Offers</option>
+                    <option value="tv">TV banner</option>
+                    <option value="accesories">Mobile Banner</option>
                 </select>
             </div>
         </div>
-        <div class="control-group">
-            <label class="control-label" for="basicinput">Product Name</label>
-            <div class="controls">
-                <input type="text" name="name" placeholder="Enter Product Name" class="span8 tip" >
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label" for="basicinput">Product Company</label>
-            <div class="controls">
-                <input type="text" name="company" placeholder="Enter Product Comapny Name" class="span8 tip"
-                    >
-            </div>
-        </div>
-
-        <div class="control-group">
-            <label class="control-label" for="basicinput">Selling Price</label>
-            <div class="controls">
-                <input type="text" name="price" placeholder="Enter Product Price" class="span8 tip" >
-            </div>
-        </div>
-
-        <div class="control-group">
-            <label class="control-label" for="basicinput">Product Description</label>
-            <div class="controls">
-                <textarea name="description" placeholder="Enter Product Description" rows="6" class="span8 tip">
-                </textarea>
-            </div>
-        </div>
-
-        <div class="control-group">
-            <label class="control-label" for="basicinput">Product Shipping Charge</label>
-            <div class="controls">
-                <input type="text" name="shippingcharge" placeholder="Enter Product Shipping Charge"
-                    class="span8 tip" >
-            </div>
-        </div>
-
-        <div class="control-group">
-            <label class="control-label" for="basicinput">Product Availability</label>
-            <div class="controls">
-                <select name="availability" id="availability" class="span8 tip" >
-                    <option value="">Select</option>
-                    <option value="In Stock">In Stock</option>
-                    <option value="Out of Stock">Out of Stock</option>
-                </select>
-            </div>
-        </div>
-
-
 
         <div class="control-group">
             <label class="control-label" for="basicinput">Product Image1</label>
             <div class="controls">
-                <input type="file" name="upimage1">
+                <input type="file" name="upload1">
             </div>
         </div>
 
@@ -149,7 +100,7 @@
         <div class="control-group">
             <label class="control-label" for="basicinput">Product Image2</label>
             <div class="controls">
-                <input type="file" name="upimage2" class="span8 tip" >
+                <input type="file" name="upload2" class="span8 tip" >
             </div>
         </div>
 
@@ -158,7 +109,7 @@
         <div class="control-group">
             <label class="control-label" for="basicinput">Product Image3</label>
             <div class="controls">
-                <input type="file" name="upimage3" class="span8 tip">
+                <input type="file" name="upload3" class="span8 tip">
             </div>
         </div><br>
 

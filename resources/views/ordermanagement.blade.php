@@ -78,7 +78,6 @@
                                 <th>Product Price</th>
                                 <th>Delivery Date</th>
                                 <th>Action</th>
-                                <th>Action</th>
 
                             </tr>
                             @foreach($data as $Data1)
@@ -89,8 +88,8 @@
                                 <td>{{$Data1->email}}</td>
                                 <td>{{$Data1->email}}</td>
                                 <td>nil</td>
-                                <td><a onclick="return confirm('are you sure')" href="{{url('updateproduct/'.$Data1->id)}}">update</a></td>                      
-                                <td><a onclick="return confirm('are you sure')" href="{{url('deleteorder/'.$Data1->id)}}">delete</a></td>
+                                <td>update</td>                      
+                                
                             </tr>
                            
                             @endforeach

@@ -1,3 +1,5 @@
+@extends('home')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,68 +29,29 @@
 </head>
 
 <body>
+
+<!-- menu -->
+
+<div class="row" id="menu1">
+            <div class="col-md-3 col-6">
+                <center><a class="nav-l" href="mobile">Mobile</a></center>
+            </div>
+            <div class="col-md-3 col-6">
+                <center><a class="nav-l" href="laptop">Laptop</a></center>
+            </div>
+            <div class="col-md-3 col-6">
+                <center><a class="nav-l" href="tv">Tv</a></center>
+            </div>
+            <div class="col-md-3 col-6">
+                <center><a class="nav-l" href="accesories">Accesories</a></center>
+            </div>
+        </div>
+    <br>
     <div class="container-fluid">
-
-        <!-- nav bar -->
-
-        <header class="top-fixed header">
-            <nav class="navbar navbar-expand-lg navbar-dark ">
-                <h3 style="padding-right:130px; color: white;">Shop-Cart</h3>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <form class="form-inline my-2 my-lg-0 form-inline md-form mr-auto mb-4">
-                        <input class="form-control mr-sm-2" style="width:450px " type="search" placeholder="Search"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
-                            style="color: white;">Search</button>
-                    </form>
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index" style="font-size:20px"><i
-                                    class="fa fa-fw fa-home"></i>Home</a>
-                        </li>
-
-                        <li class="nav-item active dropdown">
-                            @if(session()->has('user_id'))
-                            <a class="nav-link dropdown-toggle" href="logout" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" name="login"
-                                style="padding-right:20px; font-size:20px;"><i class="fa fa-fw fa-user"></i>
-                                <p>{{session('user_id')}}</p>
-                            </a>
-
-                            <ul class="dropdown-menu" id="navbarDropdown" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Change Password</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="logout">Logout</a></li>
-                            </ul>
-                            @else
-                            <a class="nav-link" href="login" name="login" style="padding-right:20px; font-size:20px;"><i
-                                    class="fa fa-fw fa-user"></i>
-                                <p>Login</p>
-                            </a>
-                            @endif
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="cart" style="font-size:20px"><i class="fa"></i> Cart</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </nav>
-        </header>
-        <div class="div top"></div>
-
         <div class="row">
             @foreach($data as $Data1)
             <div class="col-md-3" style="padding:10px">
-                <div class="card">
+                <div class="card" style="padding:10px">
                     <div class="form-row">
                         <div class="col-md-4">
                             <a href="productdetails/{{$Data1->id}}"><img src="/storage/profile/{{$Data1->image1}}" class="card-img-top"
@@ -102,7 +65,7 @@
                             <p>Shipping Charge{{$Data1->shippingcharge}}</p>
                             <p>{{$Data1->description}}</p>
                             <h5 style="color:green">{{$Data1->availability}}</h5>
-                            <a href="checkout/{{$Data1->id}}"><button  class="btn btn-primary">Buynow</button></a>
+                            <a href="{{url('add-to-cart/'.$Data1->id)}}"><button  class="btn btn-primary">Add to Cart</button></a>
                         </div>
                     </div>
                 </div>
@@ -113,3 +76,4 @@
 </body>
 
 </html>
+@endsection

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use App\Product;
 
 class mycontroller extends Controller
 {
@@ -40,6 +41,8 @@ class mycontroller extends Controller
         $username=$req->input('username'); 
         $password=$req->input('password');
         $data= DB::table('users')->where('username',$username)->first();
+        $admin='admin';
+        $password='12345';
         if(is_null($data))
         {
             // echo "incorrect username";
@@ -47,8 +50,15 @@ class mycontroller extends Controller
         }   
         elseif(($username==$data->username)&&($password==$data->password))
         {
-            $req->session()->put('user_id',$data->username);
-            return view('index');
+            if(($username==$admin)&&($password==$password))
+            {
+                return redirect('admin');
+            }
+            else
+            {
+                $req->session()->put('user_id',$data->username);
+                return view('index');
+            }
         }
         else
         {
@@ -103,13 +113,6 @@ class mycontroller extends Controller
     public function offer(Request $request)
     {
        
-        $category=$request->input('category');
-        $name=$request->input('name');
-        $company=$request->input('company');
-        $price=$request->input('price');
-        $description=$request->input('description');
-        $shippingcharge=$request->input('shippingcharge');
-        $availability=$request->input('availability');
         $file1=$request->file('upimage1')->getClientOriginalName();
         $file2=$request->file('upimage2')->getClientOriginalName();
         $file3=$request->file('upimage3')->getClientOriginalName();
@@ -144,6 +147,43 @@ class mycontroller extends Controller
     {
         DB::table('product')->where('id',$id)->delete();
         return redirect('manageproduct');
+    }
+    public function show($id)
+    {
+        $Datas = DB::table('product')->where('id',$id)->first();
+        return view('updatetable',['data'=>$Datas]);
+    }
+    public function updateproduct(Request $req,$id)
+    {   
+        $category=$request->input('category');
+        $name=$request->input('name');
+        $company=$request->input('company');
+        $price=$request->input('price');
+        $shippingcharge=$request->input('shippingcharge');
+        $availability=$request->input('availability');
+        $file1=$request->file('upimage1')->getClientOriginalName();
+        $file2=$request->file('upimage2')->getClientOriginalName();
+        $file3=$request->file('upimage3')->getClientOriginalName();
+        
+        $image1= "upimage1".time().'.'.request()->upimage1->getClientOriginalExtension();
+        $request->file('upimage1')->storeAs('public/profile',$image1);
+        $image2= "upimage1".time().'.'.request()->upimage1->getClientOriginalExtension();
+        $request->file('upimage1')->storeAs('public/profile',$image2);
+        $image3= "upimage2".time().'.'.request()->upimage2->getClientOriginalExtension();
+        $request->file('upimage2')->storeAs('public/profile',$image3);
+
+        DB::table('product')->insert([
+            'category' => $category,
+            'name' => $name,
+            'company' => $company,
+            'price' => $price,
+            'shippingcharge' => $shippingcharge,
+            'availability' => $availability,
+            'image1' => $image1,
+            'image2' => $image2,
+            'image3' => $image3,
+        ]);
+        return redirect('manageproduct')->with('success','Succesfully updated');
     }
     public function productmobile()
     {
@@ -188,20 +228,10 @@ class mycontroller extends Controller
         $id=DB::table('orders')->get();
         return view('ordermanagement',['data'=>$id]);
     }
-    public function deleteorder($id)
-    {
-        DB::table('orders')->where('id',$id)->delete();
-        return redirect('ordermanagement');
-    }
     public function displaymyorders()
     {
         $id=DB::table('orders')->get();
         return view('myorders',['data'=>$id]);
-    }
-    public function displayitem($id)
-    {
-        $data=DB::table('product')->where('id', '=', $id)->get();
-        return view('checkout',['data'=>$data]);
     }
     public function displayindexview()
     {
@@ -222,8 +252,28 @@ class mycontroller extends Controller
     }
     public function productdetails($id)
     {
-        $id=DB::table('product')->where('id', $id)->get();
-        $id2=DB::table('product')->where('id', $id)->get();
-        return view('productdetails')->with('data',$id)->with('data2',$id2);
+        $data=DB::table('product')->where('id',$id)->get();
+        return view('productdetails',['data'=>$data]);
     }
+    public function cart($id)
+    {
+        $id=DB::table('product')->where('id',$id)->get();
+        return view('cart',['data'=>$id]);
+    }
+
+    public function example()
+    {
+        $id=DB::table('product')->get();
+        return view('example',['data'=>$id]);
+    }
+
+   
+
+   
+
+
+
+
+
+    
 }
